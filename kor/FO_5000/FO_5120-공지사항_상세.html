@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동북아역사재단</title>
+
+    <link rel="stylesheet" href="../../assets/css/common.css">
+	<link rel="stylesheet" href="../../assets/css/jquery.fullpage.css">
+	<link rel="stylesheet" href="../../assets/css/swiper.min.css">
+    <link rel="stylesheet" href="../../assets/css/layout.css">
+    <link rel="stylesheet" href="../../assets/css/sub.css">
+</head>
+<body>
+    <div class="wrapper is_sub">
+		<!-- skip_nav -->
+        <ul class="skip_nav">
+            <li><a href="#skip_gnb" class="skip_gnb">주메뉴</a></li>
+            <li><a href="#skip_con" class="skip_con">본문</a></li>
+        </ul>
+        <!-- //skip_nav -->
+
+        <!-- header_wrap -->
+        <div class="header_wrap">
+            <!-- link_area -->
+            <div class="link_area">
+                <div class="inner">
+                    <ul class="link_list">
+                        <li><a href="javascript:;">동북아역사넷</a></li>
+                        <li><a href="javascript:;">동북아역사자료센터</a></li>
+                        <li><a href="javascript:;">독도연구소</a></li>
+                        <li><a href="javascript:;">독도아카이브</a></li>
+                        <li><a href="javascript:;">독도체험관</a></li>
+                        <li><a href="javascript:;">동북아 · 독도 교육 연수원</a></li>
+                    </ul>
+                    <ul class="link_list02">
+                        <li><a href="javascript:;">공지사항</a></li>
+                        <li><a href="javascript:;">재단소식</a></li>
+                        <li><a href="javascript:;">보도자료</a></li>
+                        <li>
+                            <div class="zoom_box">
+                                <span>화면크기</span>
+                                <button type="button" class="btn_zoom_in"><span class="blind">zoom in</span></button>
+                                <button type="button" class="btn_zoom_out"><span class="blind">zoom out</span></button>
+                            </div>
+                        </li>
+                        <li class="lang_box">
+                            <!-- pc language -->
+                            <div class="select_wrap sel_ty01 pc_lang">
+                                <a href="javascript:;" class="btn_sel">KOR</a>
+                                <ul class="sel_option">
+                                    <li class="kor"><a href="javascript:;" target="_blank" title="새창열림">KOR</a></li>
+                                    <li class="eng"><a href="javascript:;" target="_blank" title="새창열림">ENGLISH</a></li>
+                                    <li class="jpn"><a href="javascript:;" target="_blank" title="새창열림">日本語</a></li>
+                                    <li class="chn"><a href="javascript:;" target="_blank" title="새창열림">中國語</a></li>
+                                </ul>
+                            </div>
+                            <!-- //pc language -->
+                            <!-- mob language -->
+                            <select name="language" class="language" title="select language site">
+                                <option value="">KOR</option>
+                                <option value="">ENGLISH</option>
+                                <option value="">日本語</option>
+                                <option value="">中國語</option>
+                            </select>
+                            <!-- //mob language -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //link_area -->
+            <!-- gnb_area -->
+            <div class="gnb_area">
+                <div class="inner">
+                    <h1 class="logo_box">
+                        <a href="javascript:;">
+                            <img src="../../assets/images/common/logo_nahf.png" alt="동북아역사재단 NORTHEAST ASIAN HISTORY FOUNDATION 로고" class="logo_b">
+                            <img src="../../assets/images/common/logo_nahf_w.png" alt="동북아역사재단 NORTHEAST ASIAN HISTORY FOUNDATION 로고" class="logo_w">
+                        </a>
+                    </h1>
+                    <div class="gnb_box" id="skip_gnb">
+                        <ul class="dep_01">
+                            <li><a href="javascript:;"><span>주요사업소개</span></a>
+                                <div class="dep_con">
+                                    <div class="dep_inner">
+                                        <div class="dep_info">
+                                            <div class="dep_tit">주요사업소개</div>
+                                            <div class="dep_txt">동북아시아 역사 연구의 중심,<br>
+                                                동북아역사재단입니다.</div>
+                                        </div>
+                                        <div class="dep_sec_box">
+                                            <div class="dep_02_wrap">
+                                                <ul class="dep_02">
+                                                    <li><a href="javascript:;">역사·영토문제 조사 및 연구사업</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">역사·영토현안 학술대응 연구 </a></li>
+                                                                <li><a href="javascript:;">역사·영토 공유플랫폼 구축 </a></li>
+                                                                <li><a href="javascript:;">연구성과 확산</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">역사영토 현안 정책대응 사업</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">현안 모니터링 및 정책대응 </a></li>
+                                                                <li><a href="javascript:;">국내외 전략 네트워크</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">역사인식 교육·홍보사업</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">동북아 역사현안 교육연수 </a></li>
+                                                                <li><a href="javascript:;">독도체험</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </li>
+                            <li><a href="javascript:;"><span>알림마당</span></a>
+                                <div class="dep_con">
+                                    <div class="dep_inner">
+                                        <div class="dep_info">
+                                            <div class="dep_tit">알림마당</div>
+                                            <div class="dep_txt">동북아시아 역사 연구의 중심,<br>
+                                                동북아역사재단입니다.</div>
+                                        </div>
+                                        <div class="dep_sec_box">
+                                            <div class="dep_02_wrap">
+                                                <ul class="dep_02">
+                                                    <li><a href="javascript:;">공지사항</a></li>
+                                                    <li><a href="javascript:;">재단활동</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">재단소식</a></li>
+                                                                <li><a href="javascript:;">재단관련 언론보도</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">보도자료</a></li>
+                                                    <li><a href="javascript:;">뉴스레터</a></li>
+                                                    <li><a href="javascript:;">재단브로슈어</a></li>
+                                                    <li><a href="javascript:;">재단홍보동영상</a></li>                           
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </li>
+                            <li><a href="javascript:;"><span>자료마당</span></a>
+                                <div class="dep_con">
+                                    <div class="dep_inner">
+                                        <div class="dep_info">
+                                            <div class="dep_tit">자료마당</div>
+                                            <div class="dep_txt">동북아시아 역사 연구의 중심,<br>
+                                                동북아역사재단입니다.</div>
+                                        </div>
+                                        <div class="dep_sec_box">
+                                            <div class="dep_02_wrap">
+                                                <ul class="dep_02">
+                                                    <li><a href="javascript:;">정책자료</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">동북아역사포커스</a></li>
+                                                                <li><a href="javascript:;">동북아역사리포트</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">간행물</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">간행도서</a></li>
+                                                                <li><a href="javascript:;">동북아역사논총</a></li>
+                                                                <li><a href="javascript:;">JNAH(영문저널)</a></li>
+                                                                <li><a href="javascript:;">영토해양연구</a></li>
+                                                                <li><a href="javascript:;">JTMS(영문저널)</a></li>
+                                                                <li><a href="javascript:;">장애인용 오디오북</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">역사현안동영상</a></li>
+                                                    <li><a href="javascript:;">자료집</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">학술행사자료집</a></li>
+                                                                <li><a href="javascript:;">기타자료집</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </li>                            
+                            <li><a href="javascript:;"><span>참여마당</span></a>
+                                <div class="dep_con">
+                                    <div class="dep_inner">
+                                        <div class="dep_info">
+                                            <div class="dep_tit">참여마당</div>
+                                            <div class="dep_txt">동북아시아 역사 연구의 중심,<br>
+                                                동북아역사재단입니다.</div>
+                                        </div>
+                                        <div class="dep_sec_box">
+                                            <div class="dep_02_wrap">
+                                                <ul class="dep_02">
+                                                    <li><a href="javascript:;">자유게시판</a></li>
+                                                    <li><a href="javascript:;">민원신청</a></li>
+                                                    <li><a href="javascript:;">청렴신문고</a></li>
+                                                    <li><a href="javascript:;">공공재정환수제도 신고센터</a></li>
+                                                    <li><a href="javascript:;">독도체험관 방문예약</a></li>
+                                                    <li><a href="javascript:;">Contact US</a></li>
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="javascript:;"><span>정보공개</span></a>
+                                <div class="dep_con">
+                                    <div class="dep_inner">
+                                        <div class="dep_info">
+                                            <div class="dep_tit">정보공개</div>
+                                            <div class="dep_txt">동북아시아 역사 연구의 중심,<br>
+                                                동북아역사재단입니다.</div>
+                                        </div>
+                                        <div class="dep_sec_box">
+                                            <div class="dep_02_wrap">
+                                                <ul class="dep_02">
+                                                    <li><a href="javascript:;">정보공개제도안내</a></li>
+                                                    <li><a href="javascript:;">비공개대상정보안내</a></li>
+                                                    <li><a href="javascript:;">사전정보공개</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">경영공시</a></li>
+                                                                <li><a href="javascript:;">친인척채용정보공개</a></li>
+                                                                <li><a href="javascript:;">점자 문서 제공 실적공개</a></li>
+                                                                <li><a href="javascript:;">기부금 모금액 및 활용실적</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">정보공개청구</a></li>
+                                                    <li><a href="javascript:;">공공데이터개방</a></li>
+                                                    <li><a href="javascript:;">사업실명제</a></li>
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="javascript:;"><span>재단소개</span></a>
+                                <div class="dep_con">
+                                    <div class="dep_inner">
+                                        <div class="dep_info">
+                                            <div class="dep_tit">재단소개</div>
+                                            <div class="dep_txt">동북아시아 역사 연구의 중심,<br>
+                                                동북아역사재단입니다.</div>
+                                        </div>
+                                        <div class="dep_sec_box">
+                                            <div class="dep_02_wrap">
+                                                <ul class="dep_02">
+                                                    <li><a href="javascript:;">비전 및 전략</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">비전 및 목표</a></li>
+                                                                <li><a href="javascript:;">재단정관</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">이사장</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">인사말</a></li>
+                                                                <li><a href="javascript:;">약력</a></li>
+                                                                <li><a href="javascript:;">역대이사장</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">사무총장</a></li>
+                                                    <li><a href="javascript:;">연혁</a></li>
+                                                    <li><a href="javascript:;">일반현황</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">조직도</a></li>
+                                                                <li><a href="javascript:;">재단로고</a></li>
+                                                            </ul>    
+                                                        </div>
+                                
+                                                    </li>
+                                                    <li><a href="javascript:;">윤리경영</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">고객헌장</a></li>
+                                                                <li><a href="javascript:;">임직원행동강령</a></li>
+                                                                <li><a href="javascript:;">클린신고센터</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">인권경영</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">인권경영선언문</a></li>
+                                                                <li><a href="javascript:;">인권경영 추진전략</a></li>
+                                                                <li><a href="javascript:;">인권침해 구제절차</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">오시는길</a></li>
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </li>
+                        </ul>
+                    </div>                    
+                    <ul class="menu_area">
+                        <li class="search_area">
+                            <button type="button" class="btn_s_menu"><span class="blind">search</span></button>
+                            <button type="button" class="btn_close search"><span class="blind">close search</span></button>
+                            <div class="search_box">
+                                <div class="inner">
+                                    <div class="search_inner">
+                                        <label for="search_text" class="s_tit">통합<span class="fc_01">검색</span></label>
+                                        <div class="search_con">
+                                            <input type="text" name="searchWord" id="search_text" placeholder="검색어를 입력하세요" class="search_text">
+                                            <button class="btn_t_search"><span class="blind">검색</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </li>
+                        <li class="btn_mobmenu_box">
+                            <button type="button" class="btn_mobmenu"><span class="blind">mobile menu</span></button>
+                            <button type="button" class="btn_close menu"><span class="blind">close menu</span></button>
+                        </li>
+                        <li class="btn_all_box"><button type="button" class="btn_all"><span class="blind">all menu</span></button></li>
+                        <li class="quick_area">
+                            <div class="qui_menu">
+                                <button type="button" class="btn_quick"><span>QUICK MENU</span></button>
+                                <div class="quick_box_wrap">
+                                    <ul class="quick_box">
+                                        <li><a href="javascript:;" class="quick01"><span>방문 · 예약하기</span></a></li>
+                                        <li><a href="javascript:;" class="quick02"><span>역사동영상</span></a></li>
+                                        <li><a href="javascript:;" class="quick03"><span>오시는길</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //gnb_area -->
+        </div>
+        <!-- //header_wrap -->
+
+        <!-- body_wrap -->
+        <div class="body_wrap">
+            <!-- visual_area -->
+            <div class="visual_area visual05">
+                <div class="inner">
+                    <h2 class="sulist_title">1depth  메뉴</h2>
+                    <ul class="location is_pc">
+                        <li><a href="javascript:;" class="home"><span class="blind">home</span></a></li>
+                        <li><a href="javascript:;">1depth</a></li>
+                        <li><a href="javascript:;">2depth</a></li>
+                        <li class="active"><a href="javascript:;">3depth</a></li>
+                    </ul>
+                </div>            
+            </div>
+            <!-- visual_area -->
+
+            <!-- body_area -->
+            <div class="body_area">
+                <div class="inner">
+                    <!-- snb_area -->
+                    <div class="snb_area">
+                        <ul class="dep_01">
+                            <li><a href="javascript:;"><h2 class="snlist_title">1depth </h2></a>
+                                <ul class="dep_02 dep_ty02">
+                                    <li><a href="javascript:;">2depth</a>
+                                        <ul class="dep_03">
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">2depth</a>
+                                        <ul class="dep_03">
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">2depth</a>
+                                        <ul class="dep_03">
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">2depth</a>
+                                        <ul class="dep_03">
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">2depth</a>
+                                        <ul class="dep_03">
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">2depth</a>
+                                        <ul class="dep_03">
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">2depth</a>
+                                        <ul class="dep_03">
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">2depth</a>
+                                        <ul class="dep_03">
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>                          
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //snb_area -->
+                    <!-- con_wrap -->
+                    <div class="con_wrap">
+                        <div class="tit_area">
+                            <div class="tit_box">
+                                <h3 class="con_tit">공지사항</h3>
+                                <ul class="location is_mob">
+                                    <li><a href="javascript:;" class="home"><span class="blind">home</span></a></li>
+                                    <li><a href="javascript:;">1depth</a></li>
+                                    <li><a href="javascript:;">2depth</a></li>
+                                    <li class="active"><a href="javascript:;">3depth</a></li>
+                                </ul>
+                            </div>
+                            <div class="share_box">
+                                <div class="sns_list">
+                                    <a href="javascript:;" class="btn_share"><span class="blind">page share</span></a>
+                                    <div class="addthis_inline_share_toolbox"></div> <!-- addthis: sns -->
+                                </div>
+                                <div class="addthis_list">
+                                    <div class="addthis_inline_share_toolbox_jlx1"></div> <!-- addthis: print, link -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- con_area -->
+                        <div class="con_area" id="skip_con">
+
+                            <!-- 게시판 상세 -->
+                            <div class="board_view">
+
+                                <!-- 게시판 상세 상단 -->
+                                <div class="board_view_top">
+                                    <div class="category">교육연수</div>
+                                    <div class="title">2022년 동아시아사 교원연수 심화과정 1기 선정자 안내</div>
+                                    <ul class="info">
+                                        <li><strong>작성일</strong><span>2022.01.20</span></li>
+                                        <li><strong>조회수</strong><span>1,114</span></li>
+                                    </ul>
+                                </div>
+                                <!-- //게시판 상단 -->
+
+                                <!-- 내용 : asis 가 아닌 신규 인 경우(.cont_origin 없음) -->
+                                <div class="board_view_cont">
+
+                                    <!-- 에디터 영역 -->
+                                    <div class="cont">
+                                        <p>안녕하십니까? 『동북아역사논총』 편집부입니다.</p>
+                                        <br>
+                                        <p>본 재단에서 발간하는 『동북아역사논총』(한국연구재단 등재학술지) 제77호의 투고논문원고 모집을 아래와 같이 공고하오니 연구자 여러분의 많은 관심과 참여를 부탁드립니다.</p>
+                                        <br>
+                                        <p>1. 투고 대상: 한국사‧중국사‧일본사 및 한‧중‧일 관계사 관련 연구논문, 비평논문, 자료소개 등</p>
+                                        <br>
+                                        <p>2. 투고마감 및 발간일 :<br>(1) 투고마감일: 2022년 7월 15일<br>(2) 발간예정일: 2022년 9월 30일</p>
+                                        <br>
+                                        <p>3. 제출방법 : 한국연구재단 온라인투고 및 심사시스템(JAMS, https://nahf.jams.or.kr)에 접속하여 회원가입 후 투고 할 수 있습니다.<br>(문의전화 : 『동북아역사논총』 편집간사 02-2012-6039)</p>
+                                        <br>
+                                        <p>4. 원고 작성 규정 : 원고 분량은 200자 원고지 150매 내외를 기준으로 작성하시고, 첨부한 &lt;투고요령&gt;과 &lt;연구윤리준수서약&gt;을 반드시 준수해 주시기 바랍니다.
+                                        * 논문 투고 시 투고자 정보 삭제 요청(사사표기 혹은 각주 등에 투고자의 신분이 드러나는 용어 필히 삭제)</p>
+
+                                        <p>5. 참고사항<br>
+                                        (1) 편집위원회 및 심사위원회의 심사를 거쳐 게재 여부를 결정합니다.<br>
+                                        (2) 심사료, 게재료는 없습니다.<br>
+                                        (3) 게재된 논문(연구비 지원받은 논문 및 지원받지 않은 일반논문 일체)에는 원고료를 지급하지 않습니다.</p>
+                                        <br>
+                                        <p>붙임(첨부파일 참고)</p>
+                                        <br>
+                                        <p>1. 동북아역사논총 투고요령(2020.2.14 개정)<br>
+                                        2. 동북아역사논총 연구윤리 준수 서약서<br>
+                                        3. JAMS 투고요령</p>
+                                    </div>
+                                    <!-- //에디터 영역 -->
+                                    
+                                </div>
+                                <!-- //내용 : asis 가 아닌 신규 인 경우(.cont_origin 없음) -->
+
+                                <!-- 내용 : asis와 동일하게 하단 좌우스크롤 생성(.cont_origin 추가) -->
+                                <div class="board_view_cont">
+                                    <!-- 에디터 영역 -->
+                                    <div class="cont">
+                                        <div class="cont_origin">
+                                            <!-- sample 제목 : 동북아역사재단 독도체험관 2022년 초등학생 대상 온라인 영상 독도 교육 프로그램 참여 학교 모집 -->
+                                            <div class="board_cont"><p><span style="font-size: 16px;"><span style="margin: 0px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; font-family: 휴먼명조; vertical-align: baseline; display: initial; color: rgb(102, 102, 102); letter-spacing: 0pt; text-indent: -28.5333px;">【</span><span style="margin: 0px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; line-height: inherit; font-family: 휴먼명조; vertical-align: baseline; display: initial; color: rgb(102, 102, 102); text-indent: -28.5333px;">동북아역사재단 공고</span><span style="margin: 0px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; line-height: inherit; font-family: " hci="" poppy";="" vertical-align:="" baseline;="" display:="" initial;="" color:="" rgb(102,="" 102,="" 102);="" letter-spacing:="" 0pt;="" text-indent:="" -28.5333px;"="">: 2022 - 30</span><span style="margin: 0px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; line-height: inherit; font-family: 휴먼명조; vertical-align: baseline; display: initial; color: rgb(102, 102, 102); text-indent: -28.5333px;">호</span><span style="margin: 0px; padding: 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-weight: bold; font-stretch: inherit; line-height: inherit; font-family: 휴먼명조; vertical-align: baseline; display: initial; color: rgb(102, 102, 102); letter-spacing: 0pt; text-indent: -28.5333px;">】</span></span></p><p>&nbsp;</p><table style="border-collapse:collapse;table-layout:fixed;border-top:none;border-left:none;border-bottom:none;border-right:none;"><tbody><tr><td style="width: 635px; height: 64px; padding: 1.41pt 5.1pt; border-width: 2px; border-style: solid; border-color: rgb(0, 0, 0); background: rgb(251, 250, 247);" valign="middle"><p class="0" style="line-height: 300%; text-align: center; word-break: keep-all;"><span style="font-family:HY헤드라인M;font-size:16.0pt;">동북아역사재단 독도체험관 </span><span style="font-family:HY헤드라인M;letter-spacing:0pt;font-size:16.0pt;">2022</span><span style="font-family:HY헤드라인M;font-size:16.0pt;">년 초등학생 대상</span></p><p class="0" style="line-height: 300%; text-align: center; word-break: keep-all;"><span style="font-family:HY헤드라인M;font-size:16.0pt;">온라인 영상 독도 교육 프로그램 참여 학교 모집</span></p></td></tr></tbody></table><p style="line-height: 200%;">&nbsp;</p><p class="0" style="line-height: 250%;"><span style="letter-spacing:-2.0pt;font-size:12.0pt;"> </span><span style="font-family:휴먼명조;letter-spacing:-1.6pt;font-size:12.0pt;">동북아역사재단 독도체험관에서는 아이들에게 독도에 대한 올바른 정보와 인식을 전하고</span><span style="font-family:휴먼명조;letter-spacing:-1.6pt;font-size:12.0pt;">, </span><span style="font-family:휴먼명조;letter-spacing:-1.6pt;font-size:12.0pt;">학교 현장의 독도 교육 활성화를 위해 초등학교 교육 프로그램을 운영하고 있습니다</span><span style="font-family:휴먼명조;letter-spacing:-1.6pt;font-size:12.0pt;">. </span><span style="font-family:휴먼명조;letter-spacing:-1.6pt;font-size:12.0pt;">코로나</span><span style="font-family:휴먼명조;letter-spacing:-1.6pt;font-size:12.0pt;">19 </span><span style="font-family:휴먼명조;letter-spacing:-1.6pt;font-size:12.0pt;">대응 방안으로 대면교육을 대체할 수 있는 온라인 영상 교육 프로그램을 아래와 같이 운영하오니 많은 관심과 참여 바랍니다</span><span style="font-family:휴먼명조;letter-spacing:-1.6pt;font-size:12.0pt;">.</span></p><p class="0" style="line-height: 200%; letter-spacing: -0.8pt; font-size: 13pt;"><span style="letter-spacing:-0.8pt;font-size:13.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span></p><p class="0" style="margin-bottom: 5pt; line-height: 300%;"><span style="font-family:휴먼명조;letter-spacing:0pt;font-weight:bold;font-size:13.0pt;">1. </span><span style="font-family:휴먼명조;font-weight:bold;font-size:13.0pt;">프로그램 개요</span></p><table style="border-collapse:collapse;table-layout:fixed;border-top:none;border-left:none;border-bottom:none;border-right:none;"><tbody><tr><td style="width: 106px; height: 32px; padding: 1.41pt 5.1pt; border-width: 2px 2px 1px; border-style: solid; border-color: rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">대상</span></p></td><td style="width: 264px; height: 32px; padding: 1.41pt 5.1pt; border-width: 2px 1px 1px 2px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="line-height: 200%;"><span style="font-family:휴먼명조;font-size:11.0pt;">초등학교 저학년</span><span style="font-family:휴먼명조;letter-spacing:0pt;font-size:11.0pt;">(1</span><span style="font-family:휴먼명조;font-size:11.0pt;">학년</span><span style="font-family:휴먼명조;letter-spacing:0pt;font-size:11.0pt;">~3</span><span style="font-family:휴먼명조;font-size:11.0pt;">학년</span><span style="font-family:휴먼명조;letter-spacing:0pt;font-size:11.0pt;">)</span></p></td><td style="width: 264px; height: 32px; padding: 1.41pt 5.1pt; border-width: 2px 2px 1px 1px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="line-height: 200%;"><span style="font-family:휴먼명조;font-size:11.0pt;">초등학교 고학년</span><span style="font-family:휴먼명조;letter-spacing:0pt;font-size:11.0pt;">(4</span><span style="font-family:휴먼명조;font-size:11.0pt;">학년</span><span style="font-family:휴먼명조;letter-spacing:0pt;font-size:11.0pt;">~6</span><span style="font-family:휴먼명조;font-size:11.0pt;">학년</span><span style="font-family:휴먼명조;letter-spacing:0pt;font-size:11.0pt;">)</span></p></td></tr><tr><td rowspan="2" style="width: 106px; height: 63px; padding: 1.41pt 5.1pt; border-width: 1px 2px; border-style: solid; border-color: rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">프로그램명</span></p></td><td style="width: 264px; height: 32px; padding: 1.41pt 5.1pt; border-width: 1px 1px 1px 2px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="line-height: 200%;"><span style="font-family:휴먼명조;font-size:11.0pt;">열려라</span><span style="font-family:휴먼명조;letter-spacing:0pt;font-size:11.0pt;">! </span><span style="font-family:휴먼명조;font-size:11.0pt;">독도</span></p></td><td style="width: 264px; height: 32px; padding: 1.41pt 5.1pt; border-width: 1px 2px 1px 1px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="line-height: 200%;"><span style="font-family:휴먼명조;font-size:11.0pt;">인물로 배우는 독도 역사</span></p></td></tr><tr><td colspan="2" style="width: 529px; height: 30px; padding: 1.41pt 5.1pt; border-width: 1px 2px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="margin-bottom: 5pt; line-height: 200%;"><span style="letter-spacing: -0.4pt; font-weight: bold;">※ </span><span style="letter-spacing: -0.4pt; font-weight: bold;">교육 프로그램 세부 내용은 </span><span style="letter-spacing: -0.4pt; font-weight: bold;">2</span><span style="letter-spacing: -0.4pt; font-weight: bold;">페이지 참고</span></p></td></tr><tr><td style="width: 106px; height: 32px; padding: 1.41pt 5.1pt; border-width: 1px 2px; border-style: solid; border-color: rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">주제</span></p></td><td style="width: 264px; height: 32px; padding: 1.41pt 5.1pt; border-width: 1px 1px 1px 2px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="line-height: 200%;"><span style="font-family:휴먼명조;font-size:11.0pt;">독도의 자연</span></p></td><td style="width: 264px; height: 32px; padding: 1.41pt 5.1pt; border-width: 1px 2px 1px 1px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="line-height: 200%;"><span style="font-family:휴먼명조;font-size:11.0pt;">독도의 역사</span></p></td></tr><tr><td rowspan="2" style="width: 106px; height: 104px; padding: 1.41pt 5.1pt; border-width: 1px 2px; border-style: solid; border-color: rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">대상인원</span></p></td><td style="width: 264px; height: 32px; padding: 1.41pt 5.1pt; border-width: 1px 1px 1px 2px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:0pt;font-size:11.0pt;">1,500</span><span style="font-family:휴먼명조;font-size:11.0pt;">명</span></p></td><td style="width: 264px; height: 32px; padding: 1.41pt 5.1pt; border-width: 1px 2px 1px 1px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:0pt;font-size:11.0pt;">3,500</span><span style="font-family:휴먼명조;font-size:11.0pt;">명</span></p></td></tr><tr><td colspan="2" style="width: 529px; height: 71px; padding: 1.41pt 5.1pt; border-width: 1px 2px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="margin-left: 72.5pt; text-indent: -72.5pt; line-height: 200%;"><span style="letter-spacing: 0pt; font-weight: bold;">※ </span><span style="font-weight: bold;">학교당 한 학급 신청 가능</span><span style="letter-spacing: 0pt; font-weight: bold;">(30</span><span style="font-weight: bold;">명 내외</span><span style="letter-spacing: 0pt; font-weight: bold;">) / </span><span style="font-weight: bold;">저학년</span><span style="letter-spacing: 0pt; font-weight: bold;">, </span><span style="font-weight: bold;">고학년 별도 신청 가능</span></p><p class="0" style="margin-left: 15pt; text-indent: -15pt; line-height: 200%;"><span style="letter-spacing: 0pt; font-weight: bold;">※ </span><span style="font-weight: bold;">학교에서 학년 전체 수업을 진행하고 싶을 시에 교육 영상 링크와 활동지를 파일로 </span><span style="letter-spacing: -0.4pt; font-weight: bold;">제공받는 형태로 신청 가능</span><span style="letter-spacing: -0.4pt; font-weight: bold;">(5</span><span style="letter-spacing: -0.4pt; font-weight: bold;">월 </span><span style="letter-spacing: -0.4pt; font-weight: bold;">23</span><span style="letter-spacing: -0.4pt; font-weight: bold;">일부터 신청</span><span style="letter-spacing: -0.4pt; font-weight: bold;">: </span><a href="https://forms.gle/nTJzVNc8im1JVrRE9"><u><span style="letter-spacing: -0.4pt; font-weight: bold; color: rgb(0, 0, 255);">https://forms.gle/nTJzVNc8im1JVrRE9</span></u></a><span style="letter-spacing: -0.4pt; font-weight: bold;">)</span></p></td></tr><tr><td style="width: 106px; height: 32px; padding: 1.41pt 5.1pt; border-width: 1px 2px; border-style: solid; border-color: rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">제공자료</span></p></td><td colspan="2" style="width: 529px; height: 32px; padding: 1.41pt 5.1pt; border-width: 1px 2px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="margin-bottom: 5pt; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-0.6pt;font-size:11.0pt;">교육 영상 링크 </span><span style="font-family:휴먼명조;letter-spacing:-0.6pt;font-size:11.0pt;">/ </span><span style="font-family:휴먼명조;letter-spacing:-0.6pt;font-size:11.0pt;">프로그램 활동지 </span><span style="font-family:휴먼명조;letter-spacing:-0.6pt;font-size:11.0pt;">/ </span><span style="font-family:휴먼명조;letter-spacing:-0.6pt;font-size:11.0pt;">만들기 교구</span></p></td></tr><tr><td style="width: 106px; height: 32px; padding: 1.41pt 5.1pt; border-width: 1px 2px; border-style: solid; border-color: rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">비용</span></p></td><td colspan="2" style="width: 529px; height: 32px; padding: 1.41pt 5.1pt; border-width: 1px 2px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="margin-bottom: 5pt; letter-spacing: -0.4pt; font-weight: bold; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-0.3pt;font-size:11.0pt;">무료</span></p></td></tr><tr><td style="width: 106px; height: 32px; padding: 1.41pt 5.1pt; border-width: 1px 2px; border-style: solid; border-color: rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">접수기간</span></p></td><td colspan="2" style="width: 529px; height: 32px; padding: 1.41pt 5.1pt; border-width: 1px 2px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="margin-bottom: 5pt; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-0.3pt;font-size:11.0pt;">2022. 5. 11.(</span><span style="font-family:휴먼명조;letter-spacing:-0.3pt;font-size:11.0pt;">수</span><span style="font-family:휴먼명조;letter-spacing:-0.3pt;font-size:11.0pt;">) 10:00~, </span><span style="font-family:휴먼명조;letter-spacing:-0.3pt;font-size:11.0pt;">선착순 접수 마감</span></p></td></tr><tr><td style="width: 106px; height: 32px; padding: 1.41pt 5.1pt; border-width: 1px 2px; border-style: solid; border-color: rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">접수방법</span></p></td><td colspan="2" style="width: 529px; height: 32px; padding: 1.41pt 5.1pt; border-width: 1px 2px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="margin-bottom: 5pt; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-0.3pt;font-size:11.0pt;">하단 구글 신청 폼 접수 </span><span style="letter-spacing: -0.4pt; font-weight: bold;">※ </span><span style="letter-spacing: -0.4pt; font-weight: bold;">저학년</span><span style="letter-spacing: -0.4pt; font-weight: bold;">, </span><span style="letter-spacing: -0.4pt; font-weight: bold;">고학년 신청 양식 별도</span><span style="letter-spacing: -0.4pt; font-weight: bold;">, </span><span style="letter-spacing: -0.4pt; font-weight: bold;">신청 전 필수 확인</span></p></td></tr><tr><td rowspan="2" style="width: 106px; height: 116px; padding: 1.41pt 5.1pt; border-width: 1px 2px; border-style: solid; border-color: rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">신청 폼</span></p></td><td style="width: 264px; height: 64px; padding: 1.41pt 5.1pt; border-width: 1px 1px 1px 2px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="letter-spacing: -0.1pt; font-size: 11pt; line-height: 200%;"><a href="https://forms.gle/HQE8Zg5t8JxWdm5L8"><u><span style="font-family:휴먼명조;letter-spacing:-0.1pt;font-size:11.0pt;color:#0000ff;">저학년 프로그램 신청 바로가기 클릭</span></u></a></p><p class="0" style="letter-spacing: -0.1pt; font-size: 11pt; line-height: 200%;"><a href="https://forms.gle/HQE8Zg5t8JxWdm5L8"><u><span style="font-family:휴먼명조;letter-spacing:-0.1pt;font-size:11.0pt;color:#800080;">https://forms.gle/HQE8Zg5t8JxWdm5L8</span></u></a></p></td><td style="width: 264px; height: 64px; padding: 1.41pt 5.1pt; border-width: 1px 2px 1px 1px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="letter-spacing: -0.1pt; font-size: 11pt; line-height: 200%;"><a href="https://forms.gle/sZ88JwsfzdZGZzdD7"><u><span style="font-family:휴먼명조;letter-spacing:-0.1pt;font-size:11.0pt;color:#0000ff;">고학년 프로그램 신청 바로가기 클릭</span></u></a></p><p class="0" style="font-size: 11pt; line-height: 200%;"><a href="https://forms.gle/sZ88JwsfzdZGZzdD7"><u><span style="font-family:휴먼명조;letter-spacing:0pt;font-size:11.0pt;color:#800080;">https://forms.gle/sZ88JwsfzdZGZzdD7</span></u></a></p></td></tr><tr><td colspan="2" style="width: 529px; height: 52px; padding: 1.41pt 5.1pt; border-width: 1px 2px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="margin-left: 72.5pt; text-indent: -72.5pt; line-height: 200%;"><span style="letter-spacing: -0.4pt; font-weight: bold;">※ </span><u><span style="letter-spacing: -0.4pt; font-weight: bold; color: rgb(255, 0, 0);">구글 로그인</span></u><span style="letter-spacing:-0.4pt;font-weight:bold;"> </span><span style="letter-spacing: -0.4pt; font-weight: bold;">필요</span><span style="letter-spacing: -0.4pt; font-weight: bold;">(</span><span style="letter-spacing: -0.4pt; font-weight: bold;">응답 횟수 제한</span><span style="letter-spacing: -0.4pt; font-weight: bold;">)</span></p><p class="0" style="margin-left: 72.5pt; text-indent: -72.5pt; line-height: 200%;"><span style="letter-spacing: -0.4pt; font-weight: bold;">※ </span><span style="letter-spacing: -0.4pt; font-weight: bold;">선착순 접수 시 크롬 활용 권장</span><span style="letter-spacing: -0.4pt; font-weight: bold;">(</span><span style="letter-spacing: -0.4pt; font-weight: bold;">익스플로러 등은 구글 접속이 원활하지 않을 수 있음</span><span style="letter-spacing: -0.4pt; font-weight: bold;">)</span></p></td></tr><tr><td style="width: 106px; height: 32px; padding: 1.41pt 5.1pt; border-width: 1px 2px; border-style: solid; border-color: rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">접수확인</span></p></td><td colspan="2" style="width: 529px; height: 32px; padding: 1.41pt 5.1pt; border-width: 1px 2px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="margin-bottom: 5pt; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-0.3pt;font-size:11.0pt;">5</span><span style="font-family:휴먼명조;letter-spacing:-0.3pt;font-size:11.0pt;">월 </span><span style="font-family:휴먼명조;letter-spacing:-0.3pt;font-size:11.0pt;">12</span><span style="font-family:휴먼명조;letter-spacing:-0.3pt;font-size:11.0pt;">일부터 순차적으로 개별 확정 문자 발송 </span><span style="font-family:휴먼명조;letter-spacing:-0.3pt;font-size:11.0pt;">/ </span><span style="font-family:휴먼명조;letter-spacing:-0.3pt;font-size:11.0pt;">프로그램 안내 메일 발송 </span></p></td></tr><tr><td style="width: 106px; height: 32px; padding: 1.41pt 5.1pt; border-width: 1px 2px; border-style: solid; border-color: rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">자료배송</span></p></td><td colspan="2" style="width: 529px; height: 32px; padding: 1.41pt 5.1pt; border-width: 1px 2px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="margin-bottom: 5pt; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-0.3pt;font-size:11.0pt;">접수 확정 후</span><span style="font-family:휴먼명조;letter-spacing:-0.3pt;font-size:11.0pt;">, 5</span><span style="font-family:휴먼명조;letter-spacing:-0.3pt;font-size:11.0pt;">월 </span><span style="font-family:휴먼명조;letter-spacing:-0.3pt;font-size:11.0pt;">18</span><span style="font-family:휴먼명조;letter-spacing:-0.3pt;font-size:11.0pt;">일부터 순차 발송 </span></p></td></tr><tr><td style="width: 106px; height: 32px; padding: 1.41pt 5.1pt; border-width: 1px 2px; border-style: solid; border-color: rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">활용기간</span></p></td><td colspan="2" style="width: 529px; height: 32px; padding: 1.41pt 5.1pt; border-width: 1px 2px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="margin-bottom: 5pt; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-0.3pt;font-size:11.0pt;">2022. 5. 23. ~ 2022. 12. 2. </span><span style="letter-spacing: -0.4pt; font-weight: bold;">※ </span><span style="letter-spacing: -0.4pt; font-weight: bold;">원하는 날짜에 학급별 자체 교육</span></p></td></tr><tr><td style="width: 106px; height: 66px; padding: 1.41pt 5.1pt; border-width: 1px 2px; border-style: solid; border-color: rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">결과제출</span></p></td><td colspan="2" style="width: 529px; height: 66px; padding: 1.41pt 5.1pt; border-width: 1px 2px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="line-height: 200%; margin-bottom: 5pt;"><span style="font-family:휴먼명조;letter-spacing:-0.1pt;font-size:11.0pt;">프로그램 종료 후 진행 결과 제출</span><span style="font-family:휴먼명조;letter-spacing:-0.1pt;font-size:11.0pt;">(</span><span style="font-family:휴먼명조;letter-spacing:-0.1pt;font-size:11.0pt;">구글 폼 제출</span><span style="font-family:휴먼명조;letter-spacing:-0.1pt;font-size:11.0pt;">, </span><span style="font-family:휴먼명조;letter-spacing:-0.1pt;font-size:11.0pt;">양식 별도 전달</span><span style="font-family:휴먼명조;letter-spacing:-0.1pt;font-size:11.0pt;">)</span></p><p class="0" style="line-height: 200%; margin-bottom: 5pt;"><span style="letter-spacing: -0.4pt; font-weight: bold;">※ </span><span style="letter-spacing: -0.4pt; font-weight: bold;">활동사진 </span><span style="letter-spacing: -0.4pt; font-weight: bold;">1~2</span><span style="letter-spacing: -0.4pt; font-weight: bold;">장 포함</span><span style="letter-spacing: -0.4pt; font-weight: bold;">, </span><span style="letter-spacing: -0.4pt; font-weight: bold;">미제출시 다음 프로그램 신청이 어려울 수 있음</span></p></td></tr><tr><td style="width: 106px; height: 32px; padding: 1.41pt 5.1pt; border-width: 1px 2px; border-style: solid; border-color: rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">기타사항</span></p></td><td colspan="2" style="width: 529px; height: 32px; padding: 1.41pt 5.1pt; border-width: 1px 2px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="margin-bottom: 5pt; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-0.6pt;font-size:11.0pt;">독도체험관 영등포 이전 후 현장 및 실시간 교육 프로그램 접수 예정</span><span style="font-family:휴먼명조;letter-spacing:-0.6pt;font-size:11.0pt;">(8</span><span style="font-family:휴먼명조;letter-spacing:-0.6pt;font-size:11.0pt;">월 중</span><span style="font-family:휴먼명조;letter-spacing:-0.6pt;font-size:11.0pt;">)</span></p></td></tr><tr><td style="width: 106px; height: 32px; padding: 1.41pt 5.1pt; border-width: 1px 2px 2px; border-style: solid; border-color: rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">문의</span></p></td><td colspan="2" style="width: 529px; height: 32px; padding: 1.41pt 5.1pt; border-width: 1px 2px 2px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="margin-bottom: 5pt; line-height: 200%;"><span style="font-family:휴먼명조;font-size:11.0pt;">동북아역사재단 독도체험관 조현진</span><span style="font-family:휴먼명조;letter-spacing:0pt;font-size:11.0pt;">(</span><a href="mailto:chosnail@nahf.or.kr"><u><span style="font-family:휴먼명조;letter-spacing:-0.3pt;font-size:11.0pt;color:#0000ff;">chosnail@nahf.or.kr</span></u></a><span style="font-family:휴먼명조;letter-spacing:-0.3pt;font-size:11.0pt;">/ </span><span style="font-family:휴먼명조;letter-spacing:0pt;font-size:11.0pt;">02-2012-6091)</span></p></td></tr></tbody></table><p style="line-height: 300%;">&nbsp;</p><p class="0" style="margin-bottom: 5pt; line-height: 300%;"><span style="font-family:휴먼명조;letter-spacing:0pt;font-weight:bold;font-size:13.0pt;">2. </span><span style="font-family:휴먼명조;font-weight:bold;font-size:13.0pt;">교육 프로그램 세부 내용</span></p><table style="border-collapse:collapse;table-layout:fixed;border-top:none;border-left:none;border-bottom:none;border-right:none;"><tbody><tr><td style="width: 129px; height: 30px; padding: 1.41pt 5.1pt; border-top: 3px solid rgb(178, 178, 178); border-left: none; border-bottom: 1px solid rgb(178, 178, 178); border-right: 1px solid rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">프로그램명</span></p></td><td colspan="6" style="width: 506px; height: 30px; padding: 1.41pt 5.1pt; border-top: 3px solid rgb(178, 178, 178); border-left: 1px solid rgb(178, 178, 178); border-bottom: 1px solid rgb(178, 178, 178); border-right: none; background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-0.1pt;font-weight:bold;font-size:11.0pt;">프로그램 내용</span></p></td></tr><tr><td style="width: 129px; height: 57px; padding: 1.41pt 5.1pt; border-top: 1px solid rgb(178, 178, 178); border-left: none; border-bottom: 2px solid rgb(178, 178, 178); border-right: 1px solid rgb(178, 178, 178);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">열려라</span><span style="font-family:휴먼명조;letter-spacing:0pt;font-weight:bold;font-size:11.0pt;">! </span><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">독도</span></p></td><td colspan="6" style="width: 506px; height: 57px; padding: 1.41pt 5.1pt; border-top: 1px solid rgb(178, 178, 178); border-left: 1px solid rgb(178, 178, 178); border-bottom: 2px solid rgb(178, 178, 178); border-right: none;" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-size:11.0pt;">독도의 새</span><span style="font-family:휴먼명조;letter-spacing:0pt;font-size:11.0pt;">, </span><span style="font-family:휴먼명조;font-size:11.0pt;">식물</span><span style="font-family:휴먼명조;letter-spacing:0pt;font-size:11.0pt;">, </span><span style="font-family:휴먼명조;font-size:11.0pt;">바다 등을 살펴보며 독도에 사는 생물들을 알아보고 관련 내용을 바탕으로 팝업북을 만들어 보는 수업</span></p></td></tr><tr><td style="width: 129px; height: 30px; padding: 1.41pt 5.1pt; border-top: 3px solid rgb(178, 178, 178); border-left: none; border-bottom: 2px solid rgb(178, 178, 178); border-right: 1px solid rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">대상</span></p></td><td colspan="2" style="width: 157px; height: 30px; padding: 1.41pt 5.1pt; border-top: 3px solid rgb(178, 178, 178); border-left: 1px solid rgb(178, 178, 178); border-bottom: 2px solid rgb(178, 178, 178); border-right: none; background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-0.1pt;font-weight:bold;font-size:11.0pt;">구성</span></p></td><td style="width: 79px; height: 30px; padding: 1.41pt 5.1pt; border-width: 3px 1px 2px; border-style: solid; border-color: rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-0.1pt;font-weight:bold;font-size:11.0pt;">소요시간</span></p></td><td colspan="2" style="width: 152px; height: 30px; padding: 1.41pt 5.1pt; border-width: 3px 1px 2px; border-style: solid; border-color: rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">자료</span></p></td><td style="width: 118px; height: 30px; padding: 1.41pt 5.1pt; border-top: 3px solid rgb(178, 178, 178); border-left: 1px solid rgb(178, 178, 178); border-bottom: 2px solid rgb(178, 178, 178); border-right: none; background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">비고</span></p></td></tr><tr><td rowspan="3" style="width: 129px; height: 129px; padding: 1.41pt 5.1pt; border-top: 2px solid rgb(178, 178, 178); border-left: none; border-bottom: 3px solid rgb(178, 178, 178); border-right: 1px solid rgb(178, 178, 178);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-1.2pt;font-size:11.0pt;">초등학교 저학년</span></p><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-1.2pt;font-size:11.0pt;">(1</span><span style="font-family:휴먼명조;letter-spacing:-1.2pt;font-size:11.0pt;">학년</span><span style="font-family:휴먼명조;letter-spacing:-1.2pt;font-size:11.0pt;">~3</span><span style="font-family:휴먼명조;letter-spacing:-1.2pt;font-size:11.0pt;">학년</span><span style="font-family:휴먼명조;letter-spacing:-1.2pt;font-size:11.0pt;">)</span></p><p class="0" style="text-align: center; word-break: keep-all; font-weight: bold; font-size: 11pt; line-height: 200%;"><span style="font-size: 11pt;">&nbsp;&nbsp;&nbsp;&nbsp;</span></p></td><td colspan="2" style="width: 157px; height: 30px; padding: 1.41pt 5.1pt; border-top: 2px solid rgb(178, 178, 178); border-left: 1px solid rgb(178, 178, 178); border-bottom: 1px solid rgb(178, 178, 178); border-right: none;" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-size:11.0pt;">교육 영상 시청</span></p></td><td rowspan="2" style="width: 79px; height: 59px; padding: 1.41pt 5.1pt; border-width: 2px 1px 1px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:0pt;font-size:11.0pt;">15</span><span style="font-family:휴먼명조;font-size:11.0pt;">분</span></p></td><td colspan="2" style="width: 152px; height: 30px; padding: 1.41pt 5.1pt; border-width: 2px 1px 1px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-0.8pt;font-size:11.0pt;">교육 영상 링크 제공</span></p></td><td rowspan="3" style="width: 118px; height: 129px; padding: 1.41pt 5.1pt; border-top: 2px solid rgb(178, 178, 178); border-left: 1px solid rgb(178, 178, 178); border-bottom: 3px solid rgb(178, 178, 178); border-right: none;" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-0.8pt;font-size:11.0pt;">학교 당 한 학급 신청가능</span></p><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-0.8pt;font-size:11.0pt;">(</span><span style="font-family:휴먼명조;letter-spacing:-0.8pt;font-size:11.0pt;">교구 및 활동지 </span><span style="font-family:휴먼명조;letter-spacing:-0.8pt;font-size:11.0pt;">30</span><span style="font-family:휴먼명조;letter-spacing:-0.8pt;font-size:11.0pt;">개 내외 제공</span><span style="font-family:휴먼명조;letter-spacing:-0.8pt;font-size:11.0pt;">)</span></p></td></tr><tr><td colspan="2" style="width: 157px; height: 30px; padding: 1.41pt 5.1pt; border-top: 1px solid rgb(178, 178, 178); border-left: 1px solid rgb(178, 178, 178); border-bottom: 1px solid rgb(178, 178, 178); border-right: none;" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-size:11.0pt;">활동지 풀이</span></p></td><td colspan="2" style="width: 152px; height: 30px; padding: 1.41pt 5.1pt; border-width: 1px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-0.8pt;font-size:11.0pt;">활동지 제공</span></p></td></tr><tr><td colspan="2" style="width: 157px; height: 69px; padding: 1.41pt 5.1pt; border-top: 1px solid rgb(178, 178, 178); border-left: 1px solid rgb(178, 178, 178); border-bottom: 3px solid rgb(178, 178, 178); border-right: none;" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-1.1pt;font-size:11.0pt;">독도 팝업북 만들기</span></p><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-1.1pt;font-size:11.0pt;">(1</span><span style="font-family:휴먼명조;letter-spacing:-1.1pt;font-size:11.0pt;">학년은 독도 터널북 만들기 대체 가능</span><span style="font-family:휴먼명조;letter-spacing:-1.1pt;font-size:11.0pt;">)</span></p></td><td style="width: 79px; height: 69px; padding: 1.41pt 5.1pt; border-width: 1px 1px 3px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-1.1pt;font-size:11.0pt;">20</span><span style="font-family:휴먼명조;letter-spacing:-1.1pt;font-size:11.0pt;">분</span></p></td><td colspan="2" style="width: 152px; height: 69px; padding: 1.41pt 5.1pt; border-width: 1px 1px 3px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-size:11.0pt;">교구 제공</span></p></td></tr><tr><td colspan="3" style="width: 286px; height: 30px; padding: 1.41pt 5.1pt; border-top: 3px solid rgb(178, 178, 178); border-left: none; border-bottom: 1px solid rgb(178, 178, 178); border-right: 1px solid rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:함초롬바탕;font-weight:bold;font-size:11.0pt;">교구</span></p></td><td colspan="3" style="width: 231px; height: 30px; padding: 1.41pt 5.1pt; border-width: 3px 1px 1px; border-style: solid; border-color: rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:함초롬바탕;font-weight:bold;font-size:11.0pt;">활동지</span><span style="letter-spacing:0pt;font-weight:bold;font-size:11.0pt;">(12p)</span></p></td><td style="width: 118px; height: 30px; padding: 1.41pt 5.1pt; border-top: 3px solid rgb(178, 178, 178); border-left: 1px solid rgb(178, 178, 178); border-bottom: 1px solid rgb(178, 178, 178); border-right: none; background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:함초롬바탕;font-weight:bold;font-size:11.0pt;">별도 준비물</span></p></td></tr><tr><td colspan="3" style="width: 286px; height: 161px; padding: 1.41pt 5.1pt; border-top: 1px solid rgb(178, 178, 178); border-left: none; border-bottom: 3px solid rgb(178, 178, 178); border-right: 1px solid rgb(178, 178, 178);" valign="middle"><img src="/upload/image/02/64302_202205020929487830.png" title="" alt="1" border="0" style="border: 0px solid;"><p class="0" style="text-align: center; word-break: keep-all; font-weight: bold; font-size: 11pt; line-height: 200%;"><v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f"><v:stroke joinstyle="miter"><v:formulas><v:f eqn="if lineDrawn pixelLineWidth 0"><v:f eqn="sum @0 1 0"><v:f eqn="sum 0 0 @1"><v:f eqn="prod @2 1 2"><v:f eqn="prod @3 21600 pixelWidth"><v:f eqn="prod @3 21600 pixelHeight"><v:f eqn="sum @0 0 1"></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:formulas></v:stroke></v:shapetype>    </p></td><td colspan="3" style="width: 231px; height: 161px; padding: 1.41pt 5.1pt; border-width: 1px 1px 3px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><img src="/upload/image/02/64302_202205020929581460.png" title="" alt="2" border="0" style="border: 0px solid;"><br><p class="0" style="word-break: keep-all; font-size: 11pt; line-height: 200%;"><v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f"><v:stroke joinstyle="miter"><v:formulas><v:f eqn="if lineDrawn pixelLineWidth 0"><v:f eqn="sum @0 1 0"><v:f eqn="sum 0 0 @1"><v:f eqn="prod @2 1 2"><v:f eqn="prod @3 21600 pixelWidth"><v:f eqn="prod @3 21600 pixelHeight"><v:f eqn="sum @0 0 1"></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:formulas></v:stroke></v:shapetype>    </p></td><td style="width: 118px; height: 161px; padding: 1.41pt 5.1pt; border-top: 1px solid rgb(178, 178, 178); border-left: 1px solid rgb(178, 178, 178); border-bottom: 3px solid rgb(178, 178, 178); border-right: none;" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-0.8pt;font-size:11.0pt;">필기구</span><span style="font-family:휴먼명조;letter-spacing:-0.8pt;font-size:11.0pt;">, </span><span style="font-family:휴먼명조;letter-spacing:-0.8pt;font-size:11.0pt;">양면테이프</span></p></td></tr></tbody></table><p style="line-height: 300%;">&nbsp;</p><table style="border-collapse:collapse;table-layout:fixed;border-top:none;border-left:none;border-bottom:none;border-right:none;"><tbody><tr><td style="width: 129px; height: 30px; padding: 1.41pt 5.1pt; border-top: 3px solid rgb(178, 178, 178); border-left: none; border-bottom: 1px solid rgb(178, 178, 178); border-right: 1px solid rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">프로그램명</span></p></td><td colspan="4" style="width: 506px; height: 30px; padding: 1.41pt 5.1pt; border-top: 3px solid rgb(178, 178, 178); border-left: 1px solid rgb(178, 178, 178); border-bottom: 1px solid rgb(178, 178, 178); border-right: none; background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-0.1pt;font-weight:bold;font-size:11.0pt;">프로그램 내용</span></p></td></tr><tr><td style="width: 129px; height: 61px; padding: 1.41pt 5.1pt; border-top: 1px solid rgb(178, 178, 178); border-left: none; border-bottom: 2px solid rgb(178, 178, 178); border-right: 1px solid rgb(178, 178, 178);" valign="middle"><p class="0" style="line-height: 200%; text-align: center; word-break: keep-all;"><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">인물로 배우는 독도 역사</span></p></td><td colspan="4" style="width: 506px; height: 61px; padding: 1.41pt 5.1pt; border-top: 1px solid rgb(178, 178, 178); border-left: 1px solid rgb(178, 178, 178); border-bottom: 2px solid rgb(178, 178, 178); border-right: none;" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-size:11.0pt;">독도와 관련된 인물을 통해 독도의 역사에 대해 알아보고 이사부와 안용복 중 한명을 골라 캐릭터 모형을 만들어 보는 수업</span></p></td></tr><tr><td style="width: 129px; height: 30px; padding: 1.41pt 5.1pt; border-top: 3px solid rgb(178, 178, 178); border-left: none; border-bottom: 2px solid rgb(178, 178, 178); border-right: 1px solid rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">대상</span></p></td><td style="width: 159px; height: 30px; padding: 1.41pt 5.1pt; border-top: 3px solid rgb(178, 178, 178); border-left: 1px solid rgb(178, 178, 178); border-bottom: 2px solid rgb(178, 178, 178); border-right: none; background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-0.1pt;font-weight:bold;font-size:11.0pt;">구성</span></p></td><td style="width: 81px; height: 30px; padding: 1.41pt 5.1pt; border-width: 3px 1px 2px; border-style: solid; border-color: rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-0.1pt;font-weight:bold;font-size:11.0pt;">소요시간</span></p></td><td style="width: 148px; height: 30px; padding: 1.41pt 5.1pt; border-width: 3px 1px 2px; border-style: solid; border-color: rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">자료</span></p></td><td style="width: 118px; height: 30px; padding: 1.41pt 5.1pt; border-top: 3px solid rgb(178, 178, 178); border-left: 1px solid rgb(178, 178, 178); border-bottom: 2px solid rgb(178, 178, 178); border-right: none; background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;font-weight:bold;font-size:11.0pt;">비고</span></p></td></tr><tr><td rowspan="3" style="width: 129px; height: 123px; padding: 1.41pt 5.1pt; border-top: 2px solid rgb(178, 178, 178); border-left: none; border-bottom: 3px solid rgb(178, 178, 178); border-right: 1px solid rgb(178, 178, 178);" valign="middle"><p class="0" style="line-height: 200%; text-align: center; word-break: keep-all;"><span style="font-family:휴먼명조;letter-spacing:-1.2pt;font-size:11.0pt;">초등학교 고학년</span></p><p class="0" style="line-height: 200%; text-align: center; word-break: keep-all;"><span style="font-family:휴먼명조;letter-spacing:-1.2pt;font-size:11.0pt;">(4</span><span style="font-family:휴먼명조;letter-spacing:-1.2pt;font-size:11.0pt;">학년</span><span style="font-family:휴먼명조;letter-spacing:-1.2pt;font-size:11.0pt;">~6</span><span style="font-family:휴먼명조;letter-spacing:-1.2pt;font-size:11.0pt;">학년</span><span style="font-family:휴먼명조;letter-spacing:-1.2pt;font-size:11.0pt;">)</span></p></td><td style="width: 159px; height: 34px; padding: 1.41pt 5.1pt; border-top: 2px solid rgb(178, 178, 178); border-left: 1px solid rgb(178, 178, 178); border-bottom: 1px solid rgb(178, 178, 178); border-right: none;" valign="middle"><p class="0" style="line-height: 200%; text-align: center; word-break: keep-all;"><span style="font-family:휴먼명조;font-size:11.0pt;">교육 영상 시청</span></p></td><td rowspan="2" style="width: 81px; height: 63px; padding: 1.41pt 5.1pt; border-width: 2px 1px 1px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="line-height: 200%; text-align: center; word-break: keep-all;"><span style="font-family:휴먼명조;letter-spacing:0pt;font-size:11.0pt;">20</span><span style="font-family:휴먼명조;font-size:11.0pt;">분</span></p></td><td style="width: 148px; height: 34px; padding: 1.41pt 5.1pt; border-width: 2px 1px 1px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="line-height: 200%; text-align: center; word-break: keep-all;"><span style="font-family:휴먼명조;letter-spacing:-0.8pt;font-size:11.0pt;">교육 영상 링크 제공</span></p></td><td rowspan="3" style="width: 118px; height: 123px; padding: 1.41pt 5.1pt; border-top: 2px solid rgb(178, 178, 178); border-left: 1px solid rgb(178, 178, 178); border-bottom: 3px solid rgb(178, 178, 178); border-right: none;" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-0.8pt;font-size:11.0pt;">학교 당 한 학급 신청가능</span></p><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-0.8pt;font-size:11.0pt;">(</span><span style="font-family:휴먼명조;letter-spacing:-0.8pt;font-size:11.0pt;">교구 및 활동지 </span><span style="font-family:휴먼명조;letter-spacing:-0.8pt;font-size:11.0pt;">30</span><span style="font-family:휴먼명조;letter-spacing:-0.8pt;font-size:11.0pt;">개 내외 제공</span><span style="font-family:휴먼명조;letter-spacing:-0.8pt;font-size:11.0pt;">)</span></p></td></tr><tr><td style="width: 159px; height: 30px; padding: 1.41pt 5.1pt; border-top: 1px solid rgb(178, 178, 178); border-left: 1px solid rgb(178, 178, 178); border-bottom: 1px solid rgb(178, 178, 178); border-right: none;" valign="middle"><p class="0" style="line-height: 200%; text-align: center; word-break: keep-all;"><span style="font-family:휴먼명조;font-size:11.0pt;">활동지 풀이</span></p></td><td style="width: 148px; height: 30px; padding: 1.41pt 5.1pt; border-width: 1px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="line-height: 200%; text-align: center; word-break: keep-all;"><span style="font-family:휴먼명조;letter-spacing:-0.8pt;font-size:11.0pt;">활동지 제공</span></p></td></tr><tr><td style="width: 159px; height: 59px; padding: 1.41pt 5.1pt; border-top: 1px solid rgb(178, 178, 178); border-left: 1px solid rgb(178, 178, 178); border-bottom: 3px solid rgb(178, 178, 178); border-right: none;" valign="middle"><p class="0" style="line-height: 200%; text-align: center; word-break: keep-all;"><span style="font-family:휴먼명조;letter-spacing:-1.1pt;font-size:11.0pt;">독도 인물 만들기</span><span style="font-family:휴먼명조;letter-spacing:-1.1pt;font-size:11.0pt;">, </span><span style="font-family:휴먼명조;letter-spacing:-1.1pt;font-size:11.0pt;">역할놀이</span></p><p class="0" style="line-height: 200%; text-align: center; word-break: keep-all;"><span style="font-family:휴먼명조;letter-spacing:-1.1pt;font-size:11.0pt;">(</span><span style="font-family:휴먼명조;letter-spacing:-1.1pt;font-size:11.0pt;">이사부</span><span style="font-family:휴먼명조;letter-spacing:-1.1pt;font-size:11.0pt;">, </span><span style="font-family:휴먼명조;letter-spacing:-1.1pt;font-size:11.0pt;">안용복 택</span><span style="font-family:휴먼명조;letter-spacing:-1.1pt;font-size:11.0pt;">1)</span></p></td><td style="width: 81px; height: 59px; padding: 1.41pt 5.1pt; border-width: 1px 1px 3px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="line-height: 200%; text-align: center; word-break: keep-all;"><span style="font-family:휴먼명조;letter-spacing:-1.1pt;font-size:11.0pt;">20</span><span style="font-family:휴먼명조;letter-spacing:-1.1pt;font-size:11.0pt;">분</span></p></td><td style="width: 148px; height: 59px; padding: 1.41pt 5.1pt; border-width: 1px 1px 3px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><p class="0" style="line-height: 200%; text-align: center; word-break: keep-all;"><span style="font-family:휴먼명조;font-size:11.0pt;">교구 제공</span></p><p class="0" style="margin-left: 72.5pt; text-indent: -72.5pt; text-align: center; word-break: keep-all; line-height: 200%;"><span style="letter-spacing: -0.4pt; font-weight: bold;">(</span><span style="letter-spacing: -0.4pt; font-weight: bold;">※ </span><span style="letter-spacing: -0.4pt; font-weight: bold;">1</span><span style="letter-spacing: -0.4pt; font-weight: bold;">개 </span><span style="letter-spacing: -0.4pt; font-weight: bold;">2</span><span style="letter-spacing: -0.4pt; font-weight: bold;">입</span><span style="letter-spacing: -0.4pt; font-weight: bold;">)</span></p></td></tr><tr><td colspan="2" style="width: 287px; height: 30px; padding: 1.41pt 5.1pt; border-top: 3px solid rgb(178, 178, 178); border-left: none; border-bottom: 1px solid rgb(178, 178, 178); border-right: 1px solid rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:함초롬바탕;font-weight:bold;font-size:11.0pt;">교구</span></p></td><td colspan="2" style="width: 230px; height: 30px; padding: 1.41pt 5.1pt; border-width: 3px 1px 1px; border-style: solid; border-color: rgb(178, 178, 178); background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:함초롬바탕;font-weight:bold;font-size:11.0pt;">활동지</span><span style="letter-spacing:0pt;font-weight:bold;font-size:11.0pt;">(8p)</span></p></td><td style="width: 118px; height: 30px; padding: 1.41pt 5.1pt; border-top: 3px solid rgb(178, 178, 178); border-left: 1px solid rgb(178, 178, 178); border-bottom: 1px solid rgb(178, 178, 178); border-right: none; background: rgb(229, 229, 229);" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:함초롬바탕;font-weight:bold;font-size:11.0pt;">별도 준비물</span></p></td></tr><tr><td colspan="2" style="width: 287px; height: 160px; padding: 1.41pt 5.1pt; border-top: 1px solid rgb(178, 178, 178); border-left: none; border-bottom: 3px solid rgb(178, 178, 178); border-right: 1px solid rgb(178, 178, 178);" valign="middle"><img src="/upload/image/02/64302_202205020930124190.png" title="" alt="3" border="0" style="border: 0px solid;"><p class="0" style="text-align: center; word-break: keep-all; font-weight: bold; font-size: 11pt; line-height: 200%;"><v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f"><v:stroke joinstyle="miter"><v:formulas><v:f eqn="if lineDrawn pixelLineWidth 0"><v:f eqn="sum @0 1 0"><v:f eqn="sum 0 0 @1"><v:f eqn="prod @2 1 2"><v:f eqn="prod @3 21600 pixelWidth"><v:f eqn="prod @3 21600 pixelHeight"><v:f eqn="sum @0 0 1"></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:formulas></v:stroke></v:shapetype>    </p></td><td colspan="2" style="width: 230px; height: 160px; padding: 1.41pt 5.1pt; border-width: 1px 1px 3px; border-style: solid; border-color: rgb(178, 178, 178);" valign="middle"><img src="/upload/image/02/64302_202205020930220440.png" title="" alt="4" border="0" style="border: 0px solid;"><p class="0" style="word-break: keep-all; font-size: 11pt; line-height: 200%;"><v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f"><v:stroke joinstyle="miter"><v:formulas><v:f eqn="if lineDrawn pixelLineWidth 0"><v:f eqn="sum @0 1 0"><v:f eqn="sum 0 0 @1"><v:f eqn="prod @2 1 2"><v:f eqn="prod @3 21600 pixelWidth"><v:f eqn="prod @3 21600 pixelHeight"><v:f eqn="sum @0 0 1"></v:f></v:f></v:f></v:f></v:f></v:f></v:f></v:formulas></v:stroke></v:shapetype>    </p></td><td style="width: 118px; height: 160px; padding: 1.41pt 5.1pt; border-top: 1px solid rgb(178, 178, 178); border-left: 1px solid rgb(178, 178, 178); border-bottom: 3px solid rgb(178, 178, 178); border-right: none;" valign="middle"><p class="0" style="text-align: center; word-break: keep-all; line-height: 200%;"><span style="font-family:휴먼명조;letter-spacing:-0.8pt;font-size:11.0pt;">필기구</span></p></td></tr></tbody></table><p style="line-height: 300%;">&nbsp;</p></div>
+                                        </div>
+                                    </div>
+                                    <!-- //에디터 영역 -->
+                                </div>
+                                <!-- 내용 : asis와 동일하게 하단 좌우스크롤 생성(.cont_origin 추가) -->
+
+                                <!-- 첨부파일 -->
+                                <div class="board_view_attach">
+                                    <div class="title">첨부파일</div>
+                                    <ul class="attach_list">
+                                        <li><a href="javascript:;"><span class="ico_att_hwp"><span class="blind">hwp attachments</span></span>(붙임2)서류합격자_및_면접일정_공지.hwp</a></li>
+                                        <li><a href="javascript:;"><span class="ico_att_hwp"><span class="blind">hwp attachments</span></span>(양식)_재단_온라인_서포터즈_지원서류.hwp</a></li>
+                                        <li><a href="javascript:;"><span class="ico_att_hwp"><span class="blind">hwp attachments</span></span>2022년 동아시아사 교원연수 심화과정 1기 선정자안내(공고문).hwp</a></li>
+                                    </ul>
+                                </div> 
+                                <!-- //첨부파일 -->   
+                                
+                                <!-- 저작권 안내 -->
+                                <div class="kogl_open">
+                                    <p class="pic">
+                                        <a href="http://www.kogl.or.kr/open/info/license_info/all.do" target="_blank" title="새창열림">
+                                            <img src="../../assets/images/common/img_opencode.png" alt="OPEN 공공누리 - 공공저작물 자유이용 허락(출처표시 - 상업적이용금지 - 변경금지)">
+                                        </a>
+                                    </p>	
+                                    <p class="info">
+                                        동북아역사재단이 창작한 '동북아역사재단 온라인 서포터즈 4기 모집공고' 저작물은 <br>
+                                        "공공누리" <a href="http://www.kogl.or.kr/open/info/license_info/all.do" target="_blank" title="새창열림">출처표시-상업적이용금지-변경금지</a>
+                                        조건에 따라 이용 할 수 있습니다.
+                                    </p>
+                                </div>  
+                                <!-- //저작권 안내 -->    
+
+                            </div>
+                            <!-- //게시판 상세 -->
+
+                            <div class="btn_box">
+                                <div class="fc"><a href="javascript:;" class="btnbase_l primary">목록</a></div>
+                            </div>
+                            
+                            <!-- 이전글/다음글 -->
+                            <div class="next_prev_page">
+                                <div class="prev">
+                                    <div class="tit_dt">이전글</div>
+                                    <div class="tit_dd tit">
+                                        <a href="javascript:;"><span>일반공지</span><strong>동북아역사재단 전자책 구입 안내</strong></a>
+                                    </div>
+                                    <div class="tit_dd date">2022.08.08</div>
+                                </div>
+                                <div class="next off">
+                                    <div class="tit_dt">다음글</div>
+                                    <div class="tit_dd tit">다음글이 없습니다. </div>
+                                    <div class="tit_dd date"></div>
+                                </div>
+                            </div>
+                            <!-- //이전글/다음글 -->
+
+                        </div>
+                        <!-- //con_area -->
+                    </div>
+                    <!-- //con_wrap -->
+                </div>
+            </div>
+            <!-- //body_area -->
+
+            <!-- footer_area -->
+            <div class="footer_area">
+                <div class="foo_link">
+                    <div class="inner">
+                        <ul class="foo_list">
+                            <li><a href="javascript:;">홈페이지 이용안내</a></li>
+                            <li><a href="javascript:;">이용약관</a></li>
+                            <li class="fc_03 privacy"><a href="javascript:;">개인정보처리방침</a></li>
+                            <li><a href="javascript:;">이메일무단수집거부</a></li>
+                            <li><a href="javascript:;">사이트맵</a></li>
+                        </ul>
+                        <div class="foo_family">
+                            <!-- 배너영역 -->
+                            <div class="banner_area">
+                                <div class="swiper_indicator">
+                                    <button type="button" class="swiper-button-prev"><span class="blind">prev</span></button>
+                                    <div class="ind_middle">
+                                        <button type="button" class="swiper-button-play"><span class="blind">play</span></button>
+                                        <button type="button" class="swiper-button-pause is_open"><span class="blind">stop</span></button>
+                                    </div>
+                                    <button type="button" class="swiper-button-next"><span class="blind">next</span></button>
+                                </div>
+                                <div class="swiper bannerSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="javascript:;" target="_blank" title="새창열림">
+                                                <img src="../../assets/images/common/img_banner_01.png" alt="외교부">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="javascript:;" target="_blank" title="새창열림">
+                                                <img src="../../assets/images/common/img_banner_02.png" alt="교육부">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="javascript:;" target="_blank" title="새창열림">
+                                                <img src="../../assets/images/common/img_banner_01.png" alt="외교부">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="javascript:;" target="_blank" title="새창열림">
+                                                <img src="../../assets/images/common/img_banner_02.png" alt="교육부">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //배너영역 -->
+                            <!-- 관련기관 -->
+                            <div class="select_wrap sel_top agency">
+                                <a href="javascript:;" class="btn_sel">관련기관</a>
+                                <ul class="sel_option">
+                                    <li><a href="http://www.president.go.kr" target="_blank" title="새창열림">청와대</a></li>
+                                    <li><a href="http://job.alio.go.kr" target="_blank" title="새창열림">JOB-ALIO</a></li>
+                                    <li><a href="http://www.moe.go.kr/main.do" target="_blank" title="새창열림">교육부</a></li>
+                                    <li><a href="http://www.mofat.go.kr/" target="_blank" title="새창열림">외교부</a></li>
+                                    <li><a href="http://www.molit.go.kr/portal.do" target="_blank" title="새창열림">국토교통부</a></li>
+                                    <li><a href="http://www.mcst.go.kr/main.jsp" target="_blank" title="새창열림">문화체육관광부</a></li>
+                                    <li><a href="http://www.moj.go.kr/" target="_blank" title="새창열림">법무부</a></li>
+                                    <li><a href="http://www.unikorea.go.kr/main.do" target="_blank" title="새창열림">통일부</a></li>
+                                    <li><a href="http://www.mnd.go.kr/mbshome/mbs/mnd/" target="_blank" title="새창열림">국방부</a></li>
+                                    <li><a href="http://www.dokdomuseum.go.kr/" target="_blank" title="새창열림">독도박물관</a></li>
+                                    <li><a href="http://www.krihs.re.kr/" target="_blank" title="새창열림">국토연구원</a></li>
+                                </ul>
+                            </div>
+                            <!-- 관련기관 -->
+                            <!-- 패밀리사이트 -->
+                            <div class="select_wrap sel_top family">
+                                <a href="javascript:;" class="btn_sel">패밀리사이트</a>
+                                <ul class="sel_option">
+                                    <li><a href="http://www.dokdohistory.com" target="_blank" title="새창열림"><span>독도연구소</span></a></li>
+                                    <li><a href="http://dokdomuseumseoul.com" target="_blank" title="새창열림"><span>독도체험관</span></a></li>
+                                    <li><a href="http://www.hflib.kr/" target="_blank" title="새창열림"><span>동북아 역사자료실</span></a></li>
+                                    <li><a href="http://contents.nahf.or.kr/" target="_blank" title="새창열림"><span>동북아 역사넷</span></a></li>
+                                    <li><a href="/training/main.do" target="_blank" title="새창열림"><span>동북아,독도 교육 연수원</span></a></li>
+                                </ul>
+                            </div>
+                            <!-- //패밀리사이트 -->
+                        </div>
+                    </div>
+                </div>                        
+                <div class="foo_copy">
+                    <div class="inner">
+                        <ul class="link_list">
+                            <li><a href="javascript:;">동북아역사넷</a></li>
+                            <li><a href="javascript:;">동북아역사자료센터</a></li>
+                            <li><a href="javascript:;">독도연구소</a></li>
+                            <li><a href="javascript:;">독도아카이브</a></li>
+                            <li><a href="javascript:;">독도체험관</a></li>
+                            <li><a href="javascript:;">동북아∙독도 교육 연수원</a></li>
+                        </ul>
+                        <!-- 모바일용 푸터 -->
+                        <ul class="foo_list m_visible">
+                            <li><a href="javascript:;">홈페이지 이용안내</a></li>
+                            <li><a href="javascript:;">이용약관</a></li>
+                            <li class="fc_03 privacy"><a href="javascript:;">개인정보처리방침</a></li>
+                            <li><a href="javascript:;">이메일무단수집거부</a></li>
+                            <li><a href="javascript:;">사이트맵</a></li>
+                        </ul>
+                        <!-- //모바일용 푸터 -->
+                        <div class="foo_info">
+                            <div class="foo_address">
+                                <div class="txt_address"><span class="foo_tit">주소</span><span class="foo_txt">03739 서울시 서대문구 통일로 81 (미근동267) NH농협생명빌딩</span></div>
+                                <div class="txt_tel"><span class="foo_tit">전화번호</span><span class="foo_txt">02-2012-6000</span></div>
+                                <div class="txt_fax"><span class="foo_tit">팩스</span><span class="foo_txt">02-2012-6175</span></div>
+                            </div>
+                            <div class="foo_copyright">
+                                COPYRIGHT © 2022 동북아역사재단. ALL RIGHTS RESERVED.
+                            </div>
+                        </div>
+                        <div class="foo_logo">    
+                            <ul class="sns_box">
+                                <li><a href="javascript:;" class="sns_face" title="새창열림"><span class="blind">Facebook</span></a></li>
+                                <li><a href="javascript:;" class="sns_insta" title="새창열림"><span class="blind">Instagram</span></a></li>
+                                <li><a href="javascript:;" class="sns_you" title="새창열림"><span class="blind">YouTube</span></a></li>
+                                <li><a href="javascript:;" class="sns_blog" title="새창열림"><span class="blind">Blog</span></a></li>
+                            </ul>
+                            <a href="http://webwatch.or.kr" target="_blank" title="새창열림" class="logo_wa">
+                                <img src="../../assets/images/common/logo_wa.png" alt="과학기술정보통신부 WA(WEB접근성) 품질인증 마크, 웹와치(WebWatch)">
+                            </a>
+                            <a href="http://www.kogl.or.kr/" target="_blank" title="새창열림" class="logo_kogl">
+                                <img src="../../assets/images/common/logo_kogl.png" alt="공공누리 마크">
+                            </a>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+            <!-- //footer_area -->
+
+            <!-- 상단으로 -->
+            <div class="gotop_area">
+                <div class="inner">
+                    <button type="button" class="btn_gotop"><span class="blind">go top</span></button>
+                </div>
+            </div>
+            <!-- //상단으로 -->
+        </div>
+
+    </div>
+
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/js/jquery.fullPage.js"></script>
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-634df524e4d16acb"></script>
+    <script src="../../assets/js/swiper.min.js"></script>
+    <script src="../../assets/js/common.js"></script>
+</body>
+</html>

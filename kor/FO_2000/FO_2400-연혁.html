@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동북아역사재단</title>
+
+    <link rel="stylesheet" href="../../assets/css/common.css">
+	<link rel="stylesheet" href="../../assets/css/jquery.fullpage.css">
+	<link rel="stylesheet" href="../../assets/css/swiper.min.css">
+    <link rel="stylesheet" href="../../assets/css/layout.css">
+    <link rel="stylesheet" href="../../assets/css/sub.css">
+</head>
+<body>
+    <div class="wrapper is_sub">
+		<!-- skip_nav -->
+        <ul class="skip_nav">
+            <li><a href="#skip_gnb" class="skip_gnb">주메뉴</a></li>
+            <li><a href="#skip_con" class="skip_con">본문</a></li>
+        </ul>
+        <!-- //skip_nav -->
+
+        <!-- header_wrap -->
+        <div class="header_wrap">
+            <!-- link_area -->
+            <div class="link_area">
+                <div class="inner">
+                    <ul class="link_list">
+                        <li><a href="javascript:;">동북아역사넷</a></li>
+                        <li><a href="javascript:;">동북아역사자료센터</a></li>
+                        <li><a href="javascript:;">독도연구소</a></li>
+                        <li><a href="javascript:;">독도아카이브</a></li>
+                        <li><a href="javascript:;">독도체험관</a></li>
+                        <li><a href="javascript:;">동북아 · 독도 교육 연수원</a></li>
+                    </ul>
+                    <ul class="link_list02">
+                        <li><a href="javascript:;">공지사항</a></li>
+                        <li><a href="javascript:;">재단소식</a></li>
+                        <li><a href="javascript:;">보도자료</a></li>
+                        <li>
+                            <div class="zoom_box">
+                                <span>화면크기</span>
+                                <button type="button" class="btn_zoom_in"><span class="blind">zoom in</span></button>
+                                <button type="button" class="btn_zoom_out"><span class="blind">zoom out</span></button>
+                            </div>
+                        </li>
+                        <li class="lang_box">
+                            <!-- pc language -->
+                            <div class="select_wrap sel_ty01 pc_lang">
+                                <a href="javascript:;" class="btn_sel">KOR</a>
+                                <ul class="sel_option">
+                                    <li class="kor"><a href="javascript:;" target="_blank" title="새창열림">KOR</a></li>
+                                    <li class="eng"><a href="javascript:;" target="_blank" title="새창열림">ENGLISH</a></li>
+                                    <li class="jpn"><a href="javascript:;" target="_blank" title="새창열림">日本語</a></li>
+                                    <li class="chn"><a href="javascript:;" target="_blank" title="새창열림">中國語</a></li>
+                                </ul>
+                            </div>
+                            <!-- //pc language -->
+                            <!-- mob language -->
+                            <select name="language" class="language" title="select language site">
+                                <option value="">KOR</option>
+                                <option value="">ENGLISH</option>
+                                <option value="">日本語</option>
+                                <option value="">中國語</option>
+                            </select>
+                            <!-- //mob language -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //link_area -->
+            <!-- gnb_area -->
+            <div class="gnb_area">
+                <div class="inner">
+                    <h1 class="logo_box">
+                        <a href="javascript:;">
+                            <img src="../../assets/images/common/logo_nahf.png" alt="동북아역사재단 NORTHEAST ASIAN HISTORY FOUNDATION 로고" class="logo_b">
+                            <img src="../../assets/images/common/logo_nahf_w.png" alt="동북아역사재단 NORTHEAST ASIAN HISTORY FOUNDATION 로고" class="logo_w">
+                        </a>
+                    </h1>
+                    <div class="gnb_box" id="skip_gnb">
+                        <ul class="dep_01">
+                            <li><a href="javascript:;"><span>주요사업소개</span></a>
+                                <div class="dep_con">
+                                    <div class="dep_inner">
+                                        <div class="dep_info">
+                                            <div class="dep_tit">주요사업소개</div>
+                                            <div class="dep_txt">동북아시아 역사 연구의 중심,<br>
+                                                동북아역사재단입니다.</div>
+                                        </div>
+                                        <div class="dep_sec_box">
+                                            <div class="dep_02_wrap">
+                                                <ul class="dep_02">
+                                                    <li><a href="javascript:;">역사·영토문제 조사 및 연구사업</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">역사·영토현안 학술대응 연구 </a></li>
+                                                                <li><a href="javascript:;">역사·영토 공유플랫폼 구축 </a></li>
+                                                                <li><a href="javascript:;">연구성과 확산</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">역사영토 현안 정책대응 사업</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">현안 모니터링 및 정책대응 </a></li>
+                                                                <li><a href="javascript:;">국내외 전략 네트워크</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">역사인식 교육·홍보사업</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">동북아 역사현안 교육연수 </a></li>
+                                                                <li><a href="javascript:;">독도체험</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </li>
+                            <li><a href="javascript:;"><span>알림마당</span></a>
+                                <div class="dep_con">
+                                    <div class="dep_inner">
+                                        <div class="dep_info">
+                                            <div class="dep_tit">알림마당</div>
+                                            <div class="dep_txt">동북아시아 역사 연구의 중심,<br>
+                                                동북아역사재단입니다.</div>
+                                        </div>
+                                        <div class="dep_sec_box">
+                                            <div class="dep_02_wrap">
+                                                <ul class="dep_02">
+                                                    <li><a href="javascript:;">공지사항</a></li>
+                                                    <li><a href="javascript:;">재단활동</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">재단소식</a></li>
+                                                                <li><a href="javascript:;">재단관련 언론보도</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">보도자료</a></li>
+                                                    <li><a href="javascript:;">뉴스레터</a></li>
+                                                    <li><a href="javascript:;">재단브로슈어</a></li>
+                                                    <li><a href="javascript:;">재단홍보동영상</a></li>                           
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </li>
+                            <li><a href="javascript:;"><span>자료마당</span></a>
+                                <div class="dep_con">
+                                    <div class="dep_inner">
+                                        <div class="dep_info">
+                                            <div class="dep_tit">자료마당</div>
+                                            <div class="dep_txt">동북아시아 역사 연구의 중심,<br>
+                                                동북아역사재단입니다.</div>
+                                        </div>
+                                        <div class="dep_sec_box">
+                                            <div class="dep_02_wrap">
+                                                <ul class="dep_02">
+                                                    <li><a href="javascript:;">정책자료</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">동북아역사포커스</a></li>
+                                                                <li><a href="javascript:;">동북아역사리포트</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">간행물</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">간행도서</a></li>
+                                                                <li><a href="javascript:;">동북아역사논총</a></li>
+                                                                <li><a href="javascript:;">JNAH(영문저널)</a></li>
+                                                                <li><a href="javascript:;">영토해양연구</a></li>
+                                                                <li><a href="javascript:;">JTMS(영문저널)</a></li>
+                                                                <li><a href="javascript:;">장애인용 오디오북</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">역사현안동영상</a></li>
+                                                    <li><a href="javascript:;">자료집</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">학술행사자료집</a></li>
+                                                                <li><a href="javascript:;">기타자료집</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </li>                            
+                            <li><a href="javascript:;"><span>참여마당</span></a>
+                                <div class="dep_con">
+                                    <div class="dep_inner">
+                                        <div class="dep_info">
+                                            <div class="dep_tit">참여마당</div>
+                                            <div class="dep_txt">동북아시아 역사 연구의 중심,<br>
+                                                동북아역사재단입니다.</div>
+                                        </div>
+                                        <div class="dep_sec_box">
+                                            <div class="dep_02_wrap">
+                                                <ul class="dep_02">
+                                                    <li><a href="javascript:;">자유게시판</a></li>
+                                                    <li><a href="javascript:;">민원신청</a></li>
+                                                    <li><a href="javascript:;">청렴신문고</a></li>
+                                                    <li><a href="javascript:;">공공재정환수제도 신고센터</a></li>
+                                                    <li><a href="javascript:;">독도체험관 방문예약</a></li>
+                                                    <li><a href="javascript:;">Contact US</a></li>
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="javascript:;"><span>정보공개</span></a>
+                                <div class="dep_con">
+                                    <div class="dep_inner">
+                                        <div class="dep_info">
+                                            <div class="dep_tit">정보공개</div>
+                                            <div class="dep_txt">동북아시아 역사 연구의 중심,<br>
+                                                동북아역사재단입니다.</div>
+                                        </div>
+                                        <div class="dep_sec_box">
+                                            <div class="dep_02_wrap">
+                                                <ul class="dep_02">
+                                                    <li><a href="javascript:;">정보공개제도안내</a></li>
+                                                    <li><a href="javascript:;">비공개대상정보안내</a></li>
+                                                    <li><a href="javascript:;">사전정보공개</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">경영공시</a></li>
+                                                                <li><a href="javascript:;">친인척채용정보공개</a></li>
+                                                                <li><a href="javascript:;">점자 문서 제공 실적공개</a></li>
+                                                                <li><a href="javascript:;">기부금 모금액 및 활용실적</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">정보공개청구</a></li>
+                                                    <li><a href="javascript:;">공공데이터개방</a></li>
+                                                    <li><a href="javascript:;">사업실명제</a></li>
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="javascript:;"><span>재단소개</span></a>
+                                <div class="dep_con">
+                                    <div class="dep_inner">
+                                        <div class="dep_info">
+                                            <div class="dep_tit">재단소개</div>
+                                            <div class="dep_txt">동북아시아 역사 연구의 중심,<br>
+                                                동북아역사재단입니다.</div>
+                                        </div>
+                                        <div class="dep_sec_box">
+                                            <div class="dep_02_wrap">
+                                                <ul class="dep_02">
+                                                    <li><a href="javascript:;">비전 및 전략</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">비전 및 목표</a></li>
+                                                                <li><a href="javascript:;">재단정관</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">이사장</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">인사말</a></li>
+                                                                <li><a href="javascript:;">약력</a></li>
+                                                                <li><a href="javascript:;">역대이사장</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">사무총장</a></li>
+                                                    <li><a href="javascript:;">연혁</a></li>
+                                                    <li><a href="javascript:;">일반현황</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">조직도</a></li>
+                                                                <li><a href="javascript:;">재단로고</a></li>
+                                                            </ul>    
+                                                        </div>
+                                
+                                                    </li>
+                                                    <li><a href="javascript:;">윤리경영</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">고객헌장</a></li>
+                                                                <li><a href="javascript:;">임직원행동강령</a></li>
+                                                                <li><a href="javascript:;">클린신고센터</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">인권경영</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">인권경영선언문</a></li>
+                                                                <li><a href="javascript:;">인권경영 추진전략</a></li>
+                                                                <li><a href="javascript:;">인권침해 구제절차</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">오시는길</a></li>
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </li>
+                        </ul>
+                    </div>                    
+                    <ul class="menu_area">
+                        <li class="search_area">
+                            <button type="button" class="btn_s_menu"><span class="blind">search</span></button>
+                            <button type="button" class="btn_close search"><span class="blind">close search</span></button>
+                            <div class="search_box">
+                                <div class="inner">
+                                    <div class="search_inner">
+                                        <label for="search_text" class="s_tit">통합<span class="fc_01">검색</span></label>
+                                        <div class="search_con">
+                                            <input type="text" name="searchWord" id="search_text" placeholder="검색어를 입력하세요" class="search_text">
+                                            <button class="btn_t_search"><span class="blind">검색</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </li>
+                        <li class="btn_mobmenu_box">
+                            <button type="button" class="btn_mobmenu"><span class="blind">mobile menu</span></button>
+                            <button type="button" class="btn_close menu"><span class="blind">close menu</span></button>
+                        </li>
+                        <li class="btn_all_box"><button type="button" class="btn_all"><span class="blind">all menu</span></button></li>
+                        <li class="quick_area">
+                            <div class="qui_menu">
+                                <button type="button" class="btn_quick"><span>QUICK MENU</span></button>
+                                <div class="quick_box_wrap">
+                                    <ul class="quick_box">
+                                        <li><a href="javascript:;" class="quick01"><span>방문 · 예약하기</span></a></li>
+                                        <li><a href="javascript:;" class="quick02"><span>역사동영상</span></a></li>
+                                        <li><a href="javascript:;" class="quick03"><span>오시는길</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //gnb_area -->
+        </div>
+        <!-- //header_wrap -->
+
+        <!-- body_wrap -->
+        <div class="body_wrap">
+            <!-- visual_area -->
+            <div class="visual_area visual02">
+                <div class="inner">
+                    <h2 class="sulist_title">1depth  메뉴</h2>
+                    <ul class="location is_pc">
+                        <li><a href="javascript:;" class="home"><span class="blind">home</span></a></li>
+                        <li><a href="javascript:;">1depth</a></li>
+                        <li><a href="javascript:;">2depth</a></li>
+                        <li class="active"><a href="javascript:;">3depth</a></li>
+                    </ul>
+                </div>            
+            </div>
+            <!-- visual_area -->
+
+            <!-- body_area -->
+            <div class="body_area">
+                <div class="inner">
+                    <!-- snb_area -->
+                    <div class="snb_area">
+                        <ul class="dep_01">
+                            <li><a href="javascript:;"><h2 class="snlist_title">1depth </h2></a>
+                                <ul class="dep_02 dep_ty02">
+                                    <li><a href="javascript:;">2depth</a>
+                                        <ul class="dep_03">
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">2depth</a>
+                                        <ul class="dep_03">
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">2depth</a>
+                                        <ul class="dep_03">
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">2depth</a>
+                                        <ul class="dep_03">
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">2depth</a>
+                                        <ul class="dep_03">
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">2depth</a>
+                                        <ul class="dep_03">
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">2depth</a>
+                                        <ul class="dep_03">
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">2depth</a>
+                                        <ul class="dep_03">
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>                          
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //snb_area -->
+                    <!-- con_wrap -->
+                    <div class="con_wrap">
+                        <div class="tit_area">
+                            <div class="tit_box">
+                                <h3 class="con_tit">연혁</h3>
+                                <ul class="location is_mob">
+                                    <li><a href="javascript:;" class="home"><span class="blind">home</span></a></li>
+                                    <li><a href="javascript:;">1depth</a></li>
+                                    <li><a href="javascript:;">2depth</a></li>
+                                    <li class="active"><a href="javascript:;">3depth</a></li>
+                                </ul>
+                            </div>
+                            <div class="share_box">
+                                <div class="sns_list">
+                                    <a href="javascript:;" class="btn_share"><span class="blind">page share</span></a>
+                                    <div class="addthis_inline_share_toolbox"></div> <!-- addthis: sns -->
+                                </div>
+                                <div class="addthis_list">
+                                    <div class="addthis_inline_share_toolbox_jlx1"></div> <!-- addthis: print, link -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- con_area -->
+                        <div class="con_area" id="skip_con">
+                                         
+                            <div class="nahf_history">
+
+                                <div class="info_box">
+                                    <div class="txt02">2005 ~ 현재</div>
+                                    <div class="tit">동북아역사재단이 걸어온 발자취입니다.</div>
+                                </div>
+
+                                <ul class="hdepth_1">
+                                    <li>
+                                        <strong>2022</strong>
+                                        <ul class="hdepth_2">
+                                            <li>
+                                                <strong>05.30</strong>
+                                                <span>『동북아역사포커스』창간</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>2021</strong>
+                                        <ul class="hdepth_2">
+                                            <li>
+                                                <strong>12.06</strong>
+                                                <span>장원삼 제 8대 사무총장 취임</span>
+                                            </li>
+                                            <li>
+                                                <strong>10.01</strong>
+                                                <span>『동북아역사리포트』창간</span>
+                                            </li>
+                                            <li>
+                                                <strong>02.26</strong>
+                                                <span>조직개편 : 정책기획관 연구정책실 교육홍보실 운영관리실</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>2020</strong>
+                                        <ul class="hdepth_2">
+                                            <li>
+                                                <strong>12.28</strong>
+                                                <span>이영호 제6대 이사장 취임</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>2019</strong>
+                                        <ul class="hdepth_2">
+                                            <li>
+                                                <strong>10.01</strong>
+                                                <span>독도체험관 독도전시실(광화문 소재) 개관</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>2018</strong>
+                                        <ul class="hdepth_2">
+                                            <li>
+                                                <strong>12.10</strong>
+                                                <span>동북아역사재단 교양총서 시리즈 발간</span>
+                                            </li>
+                                            <li>
+                                                <strong>10.10</strong>
+                                                <span>조태영 제7대 사무총장 취임</span>
+                                            </li>
+                                            <li>
+                                                <strong>09.17</strong>
+                                                <span>조직개편 : 연구정책실, 교육홍보실, 운영기획실</span>
+                                            </li>
+                                            <li>
+                                                <strong>01.01</strong>
+                                                <span>조직개편 : 한중관계연구소, 한일관계연구소,  <br>독도연구소, 기획연구처, 운영관리처, 대외협력처</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>2017</strong>
+                                        <ul class="hdepth_2">
+                                            <li>
+                                                <strong>12.19</strong>
+                                                <span>가족친화기관 인증</span>
+                                            </li>
+                                            <li>
+                                                <strong>11.07</strong>
+                                                <span>김도형 제5대 이사장 취임</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>2016</strong>
+                                        <ul class="hdepth_2">
+                                            <li>
+                                                <strong>09.21</strong>
+                                                <span>재단 창립 10주년 기념 및 비전 선포식</span>
+                                            </li>
+                                            <li>
+                                                <strong>04.30</strong>
+                                                <span>조직개편 : 기획운영처,연구관리처, 한중관계연구소, 한일관계연구소, <br>독도연구소, 동북아역사독도교육연수원, 대외협력실</span>
+                                            </li>
+                                            <li>
+                                                <strong>01.01</strong>
+                                                <span>조직개편 : 기획연구처, 한중관계연구소, 한일관계연구소,  <br>독도연구소, 운영지원처, 대외협력실</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>2015</strong>
+                                        <ul class="hdepth_2">
+                                            <li>
+                                                <strong>09.17</strong>
+                                                <span>김호섭 제4대 이사장 취임</span>
+                                            </li>
+                                            <li>
+                                                <strong>06.15</strong>
+                                                <span>이현주 제6대 사무총장 취임</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>2014</strong>
+                                        <ul class="hdepth_2">
+                                            <li>
+                                                <strong>01.01</strong>
+                                                <span>영토해양 전문 영문저널 JTMS <br>(The Journal of Territorial and Maritime Studies) 창간</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>2013</strong>
+                                        <ul class="hdepth_2">
+                                            <li>
+                                                <strong>09.04</strong>
+                                                <span>외국인을 위한 동북아 역사 아카데미</span>
+                                            </li>
+                                            <li>
+                                                <strong>07.05</strong>
+                                                <span>동북아·독도 교육연수원 인가</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>2012</strong>
+                                        <ul class="hdepth_2">
+                                            <li>
+                                                <strong>09.17</strong>
+                                                <span>김학준 제3대 이사장 취임</span>
+                                            </li>
+                                            <li>
+                                                <strong>09.14</strong>
+                                                <span>독도체험관 개관</span>
+                                            </li>
+                                            <li>
+                                                <strong>03.30</strong>
+                                                <span>석동연 제5대 사무총장 취임</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>2011</strong>
+                                        <ul class="hdepth_2">
+                                            <li>
+                                                <strong>12.28</strong>
+                                                <span>동북아역사 DB포털 동북아역사넷 <br>(<a href="http://contents.nahf.or.kr" target="_blank" title="새창열림">http://contents.nahf.or.kr</a>) 오픈</span>
+                                            </li>
+                                            <li>
+                                                <strong>10.31</strong>
+                                                <span>역사콘서트 개최</span>
+                                            </li>
+                                            <li>
+                                                <strong>09.30</strong>
+                                                <span>영토해양연구 창간임</span>
+                                            </li>
+                                            <li>
+                                                <strong>04.04</strong>
+                                                <span>독도전시회 개최</span>
+                                            </li>
+                                            <li>
+                                                <strong>01.02</strong>
+                                                <span>부서명칭변경 : 홍보교육실</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>2010</strong>
+                                        <ul class="hdepth_2">
+                                            <li>
+                                                <strong>08.11</strong>
+                                                <span>김영소 제4대 사무총장 취임</span>
+                                            </li>
+                                            <li>
+                                                <strong>01.11</strong>
+                                                <span>부서명칭변경 : 홍보자료실</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>2009</strong>
+                                        <ul class="hdepth_2">
+                                            <li>
+                                                <strong>09.18</strong>
+                                                <span>정재정 제2대 이사장 취임</span>
+                                            </li>
+                                            <li>
+                                                <strong>02.11</strong>
+                                                <span>신연성 제3대 사무총장 취임</span>
+                                            </li>
+                                            <li>
+                                                <strong>01.02</strong>
+                                                <span>부서명칭변경 : 운영관리실, 정책기획실</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>2008</strong>
+                                        <ul class="hdepth_2">
+                                            <li>
+                                                <strong>08.14</strong>
+                                                <span>독도연구소 개소</span>
+                                            </li>
+                                            <li>
+                                                <strong>01.17</strong>
+                                                <span>동북아역사자료센터 개소</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>2007</strong>
+                                        <ul class="hdepth_2">
+                                            <li>
+                                                <strong>09.14</strong>
+                                                <span>역사NGO 세계대회 개최</span>
+                                            </li>
+                                            <li>
+                                                <strong>09.12</strong>
+                                                <span>출범 1주년 학술회의 개최 '상이한 역사인식 - 그 책임과 민족, 영토'</span>
+                                            </li>
+                                            <li>
+                                                <strong>09.10~16</strong>
+                                                <span>출범 1주년 기념 '동북아역사주간'</span>
+                                            </li>
+                                            <li>
+                                                <strong>09.01</strong>
+                                                <span>
+                                                    출범 1주년 국제학술회의 개최 <br>
+                                                    '동북아의 협력을 위한 모색 - 내셔널리즘과 보편주의의 조화'
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <strong>08.14</strong>
+                                                <span>사이버독도역사관(<a href="http://www.dokdohistory.com" target="_blank" title="새창열림">http://www.dokdohistory.com</a>) 오픈</span>
+                                            </li>
+                                            <li>
+                                                <strong>03.05</strong>
+                                                <span>조환복 제2대 사무총장 취임</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>2006</strong>
+                                        <ul class="hdepth_2">
+                                            <li>
+                                                <strong>09.28</strong>
+                                                <span>유광석 초대 사무총장 취임</span>
+                                            </li>
+                                            <li>
+                                                <strong>09.22</strong>
+                                                <span>동북아역사재단 설립 등기</span>
+                                            </li>
+                                            <li>
+                                                <strong>09.01</strong>
+                                                <span>김용덕 초대 이사장 취임</span>
+                                            </li>
+                                            <li>
+                                                <strong>08.21</strong>
+                                                <span>재단 설립위원회 개최</span>
+                                            </li>
+                                            <li>
+                                                <strong>08.17</strong>
+                                                <span>시행령 제정(대통령령 제19648호)</span>
+                                            </li>
+                                            <li>
+                                                <strong>05.19</strong>
+                                                <span>『동북아역사재단 설립운영에 관한 법률』제정(법률 제7955호)</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>2005</strong>
+                                        <ul class="hdepth_2">
+                                            <li>
+                                                <strong>12.06</strong>
+                                                <span>『동북아역사재단 설립운영에 관한 법률안』 발의(국회 유기홍 의원 등 23명)</span>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                        <!-- //con_area -->
+                    </div>
+                    <!-- //con_wrap -->
+                </div>
+            </div>
+            <!-- //body_area -->
+
+            <!-- footer_area -->
+            <div class="footer_area">
+                <div class="foo_link">
+                    <div class="inner">
+                        <ul class="foo_list">
+                            <li><a href="javascript:;">홈페이지 이용안내</a></li>
+                            <li><a href="javascript:;">이용약관</a></li>
+                            <li class="fc_03 privacy"><a href="javascript:;">개인정보처리방침</a></li>
+                            <li><a href="javascript:;">이메일무단수집거부</a></li>
+                            <li><a href="javascript:;">사이트맵</a></li>
+                        </ul>
+                        <div class="foo_family">
+                            <!-- 배너영역 -->
+                            <div class="banner_area">
+                                <div class="swiper_indicator">
+                                    <button type="button" class="swiper-button-prev"><span class="blind">prev</span></button>
+                                    <div class="ind_middle">
+                                        <button type="button" class="swiper-button-play"><span class="blind">play</span></button>
+                                        <button type="button" class="swiper-button-pause is_open"><span class="blind">stop</span></button>
+                                    </div>
+                                    <button type="button" class="swiper-button-next"><span class="blind">next</span></button>
+                                </div>
+                                <div class="swiper bannerSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="javascript:;" target="_blank" title="새창열림">
+                                                <img src="../../assets/images/common/img_banner_01.png" alt="외교부">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="javascript:;" target="_blank" title="새창열림">
+                                                <img src="../../assets/images/common/img_banner_02.png" alt="교육부">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="javascript:;" target="_blank" title="새창열림">
+                                                <img src="../../assets/images/common/img_banner_01.png" alt="외교부">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="javascript:;" target="_blank" title="새창열림">
+                                                <img src="../../assets/images/common/img_banner_02.png" alt="교육부">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //배너영역 -->
+                            <!-- 관련기관 -->
+                            <div class="select_wrap sel_top agency">
+                                <a href="javascript:;" class="btn_sel">관련기관</a>
+                                <ul class="sel_option">
+                                    <li><a href="http://www.president.go.kr" target="_blank" title="새창열림">청와대</a></li>
+                                    <li><a href="http://job.alio.go.kr" target="_blank" title="새창열림">JOB-ALIO</a></li>
+                                    <li><a href="http://www.moe.go.kr/main.do" target="_blank" title="새창열림">교육부</a></li>
+                                    <li><a href="http://www.mofat.go.kr/" target="_blank" title="새창열림">외교부</a></li>
+                                    <li><a href="http://www.molit.go.kr/portal.do" target="_blank" title="새창열림">국토교통부</a></li>
+                                    <li><a href="http://www.mcst.go.kr/main.jsp" target="_blank" title="새창열림">문화체육관광부</a></li>
+                                    <li><a href="http://www.moj.go.kr/" target="_blank" title="새창열림">법무부</a></li>
+                                    <li><a href="http://www.unikorea.go.kr/main.do" target="_blank" title="새창열림">통일부</a></li>
+                                    <li><a href="http://www.mnd.go.kr/mbshome/mbs/mnd/" target="_blank" title="새창열림">국방부</a></li>
+                                    <li><a href="http://www.dokdomuseum.go.kr/" target="_blank" title="새창열림">독도박물관</a></li>
+                                    <li><a href="http://www.krihs.re.kr/" target="_blank" title="새창열림">국토연구원</a></li>
+                                </ul>
+                            </div>
+                            <!-- 관련기관 -->
+                            <!-- 패밀리사이트 -->
+                            <div class="select_wrap sel_top family">
+                                <a href="javascript:;" class="btn_sel">패밀리사이트</a>
+                                <ul class="sel_option">
+                                    <li><a href="http://www.dokdohistory.com" target="_blank" title="새창열림"><span>독도연구소</span></a></li>
+                                    <li><a href="http://dokdomuseumseoul.com" target="_blank" title="새창열림"><span>독도체험관</span></a></li>
+                                    <li><a href="http://www.hflib.kr/" target="_blank" title="새창열림"><span>동북아 역사자료실</span></a></li>
+                                    <li><a href="http://contents.nahf.or.kr/" target="_blank" title="새창열림"><span>동북아 역사넷</span></a></li>
+                                    <li><a href="/training/main.do" target="_blank" title="새창열림"><span>동북아,독도 교육 연수원</span></a></li>
+                                </ul>
+                            </div>
+                            <!-- //패밀리사이트 -->
+                        </div>
+                    </div>
+                </div>                        
+                <div class="foo_copy">
+                    <div class="inner">
+                        <ul class="link_list">
+                            <li><a href="javascript:;">동북아역사넷</a></li>
+                            <li><a href="javascript:;">동북아역사자료센터</a></li>
+                            <li><a href="javascript:;">독도연구소</a></li>
+                            <li><a href="javascript:;">독도아카이브</a></li>
+                            <li><a href="javascript:;">독도체험관</a></li>
+                            <li><a href="javascript:;">동북아∙독도 교육 연수원</a></li>
+                        </ul>
+                        <!-- 모바일용 푸터 -->
+                        <ul class="foo_list m_visible">
+                            <li><a href="javascript:;">홈페이지 이용안내</a></li>
+                            <li><a href="javascript:;">이용약관</a></li>
+                            <li class="fc_03 privacy"><a href="javascript:;">개인정보처리방침</a></li>
+                            <li><a href="javascript:;">이메일무단수집거부</a></li>
+                            <li><a href="javascript:;">사이트맵</a></li>
+                        </ul>
+                        <!-- //모바일용 푸터 -->
+                        <div class="foo_info">
+                            <div class="foo_address">
+                                <div class="txt_address"><span class="foo_tit">주소</span><span class="foo_txt">03739 서울시 서대문구 통일로 81 (미근동267) NH농협생명빌딩</span></div>
+                                <div class="txt_tel"><span class="foo_tit">전화번호</span><span class="foo_txt">02-2012-6000</span></div>
+                                <div class="txt_fax"><span class="foo_tit">팩스</span><span class="foo_txt">02-2012-6175</span></div>
+                            </div>
+                            <div class="foo_copyright">
+                                COPYRIGHT © 2022 동북아역사재단. ALL RIGHTS RESERVED.
+                            </div>
+                        </div>
+                        <div class="foo_logo">    
+                            <ul class="sns_box">
+                                <li><a href="javascript:;" class="sns_face" title="새창열림"><span class="blind">Facebook</span></a></li>
+                                <li><a href="javascript:;" class="sns_insta" title="새창열림"><span class="blind">Instagram</span></a></li>
+                                <li><a href="javascript:;" class="sns_you" title="새창열림"><span class="blind">YouTube</span></a></li>
+                                <li><a href="javascript:;" class="sns_blog" title="새창열림"><span class="blind">Blog</span></a></li>
+                            </ul>
+                            <a href="http://webwatch.or.kr" target="_blank" title="새창열림" class="logo_wa">
+                                <img src="../../assets/images/common/logo_wa.png" alt="과학기술정보통신부 WA(WEB접근성) 품질인증 마크, 웹와치(WebWatch)">
+                            </a>
+                            <a href="http://www.kogl.or.kr/" target="_blank" title="새창열림" class="logo_kogl">
+                                <img src="../../assets/images/common/logo_kogl.png" alt="공공누리 마크">
+                            </a>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+            <!-- //footer_area -->
+
+            <!-- 상단으로 -->
+            <div class="gotop_area">
+                <div class="inner">
+                    <button type="button" class="btn_gotop"><span class="blind">go top</span></button>
+                </div>
+            </div>
+            <!-- //상단으로 -->
+        </div>
+
+    </div>
+
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/js/jquery.fullPage.js"></script>
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-634df524e4d16acb"></script>
+    <script src="../../assets/js/swiper.min.js"></script>
+    <script src="../../assets/js/common.js"></script>
+</body>
+</html>

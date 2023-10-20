@@ -1,0 +1,1865 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동북아역사재단</title>
+
+    <link rel="stylesheet" href="../../assets/css/common.css">
+	<link rel="stylesheet" href="../../assets/css/jquery.fullpage.css">
+	<link rel="stylesheet" href="../../assets/css/swiper.min.css">
+    <link rel="stylesheet" href="../../assets/css/layout.css">
+    <link rel="stylesheet" href="../../assets/css/sub.css">
+    <style>
+        /* 컴포넌트 페이지용 클래스 */
+        .comp_box:first-child{padding-top:0;}
+        .comp_box{padding:30px 0;}
+        .comp_box + .comp_box{border-top:1px solid #ddd;}
+        .comp_tit{position:relative; padding-left:20px; font-size:20px; line-height:1.5; font-weight:bold; margin-bottom:5px;}
+        .comp_tit::before{content:''; display:block; position:absolute; top:10px; left:0; width:10px; height:10px; background:black; border-radius:100%;}
+        .comp_tit02{position:relative; padding-left:10px; font-size:15px; line-height:1.5; font-weight:bold; margin-bottom:5px; font-weight:bold; margin:10px 0 5px;}
+        .comp_tit02::before{content:'*'; display:block; position:absolute; top:0; left:0; }
+        .comp_txt{margin-top:10px; font-size:16px; line-height:1.5;}
+        .comp_cf{margin-top:10px; font-size:14px; color:#666;}
+        .comp_flex{display:flex; margin:-5px -5px 0;}
+        .comp_flex > li{padding:5px;}
+    
+    </style>
+</head>
+<body>
+    <div class="wrapper is_sub">
+		<!-- skip_nav -->
+        <ul class="skip_nav">
+            <li><a href="#skip_gnb" class="skip_gnb">주메뉴</a></li>
+            <li><a href="#skip_con" class="skip_con">본문</a></li>
+        </ul>
+        <!-- //skip_nav -->
+
+        <!-- header_wrap -->
+        <div class="header_wrap">
+            <!-- link_area -->
+            <div class="link_area">
+                <div class="inner">
+                    <ul class="link_list">
+                        <li><a href="javascript:;">동북아역사넷</a></li>
+                        <li><a href="javascript:;">동북아역사자료센터</a></li>
+                        <li><a href="javascript:;">독도연구소</a></li>
+                        <li><a href="javascript:;">독도아카이브</a></li>
+                        <li><a href="javascript:;">독도체험관</a></li>
+                        <li><a href="javascript:;">동북아 · 독도 교육 연수원</a></li>
+                    </ul>
+                    <ul class="link_list02">
+                        <li><a href="javascript:;">공지사항</a></li>
+                        <li><a href="javascript:;">재단소식</a></li>
+                        <li><a href="javascript:;">보도자료</a></li>
+                        <li>
+                            <div class="zoom_box">
+                                <span>화면크기</span>
+                                <button type="button" class="btn_zoom_in"><span class="blind">zoom in</span></button>
+                                <button type="button" class="btn_zoom_out"><span class="blind">zoom out</span></button>
+                            </div>
+                        </li>
+                        <li class="lang_box">
+                            <!-- pc language -->
+                            <div class="select_wrap sel_ty01 pc_lang">
+                                <a href="javascript:;" class="btn_sel">KOR</a>
+                                <ul class="sel_option">
+                                    <li class="kor"><a href="javascript:;" target="_blank" title="새창열림">KOR</a></li>
+                                    <li class="eng"><a href="javascript:;" target="_blank" title="새창열림">ENGLISH</a></li>
+                                    <li class="jpn"><a href="javascript:;" target="_blank" title="새창열림">日本語</a></li>
+                                    <li class="chn"><a href="javascript:;" target="_blank" title="새창열림">中國語</a></li>
+                                </ul>
+                            </div>
+                            <!-- //pc language -->
+                            <!-- mob language -->
+                            <select name="language" class="language" title="select language site">
+                                <option value="">KOR</option>
+                                <option value="">ENGLISH</option>
+                                <option value="">日本語</option>
+                                <option value="">中國語</option>
+                            </select>
+                            <!-- //mob language -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //link_area -->
+            <!-- gnb_area -->
+            <div class="gnb_area">
+                <div class="inner">
+                    <h1 class="logo_box">
+                        <a href="javascript:;">
+                            <img src="../../assets/images/common/logo_nahf.png" alt="동북아역사재단 NORTHEAST ASIAN HISTORY FOUNDATION 로고" class="logo_b">
+                            <img src="../../assets/images/common/logo_nahf_w.png" alt="동북아역사재단 NORTHEAST ASIAN HISTORY FOUNDATION 로고" class="logo_w">
+                        </a>
+                    </h1>
+                    <div class="gnb_box" id="skip_gnb">
+                        <ul class="dep_01">
+                            <li><a href="javascript:;"><span>주요사업소개</span></a>
+                                <div class="dep_con">
+                                    <div class="dep_inner">
+                                        <div class="dep_info">
+                                            <div class="dep_tit">주요사업소개</div>
+                                            <div class="dep_txt">동북아시아 역사 연구의 중심,<br>
+                                                동북아역사재단입니다.</div>
+                                        </div>
+                                        <div class="dep_sec_box">
+                                            <div class="dep_02_wrap">
+                                                <ul class="dep_02">
+                                                    <li><a href="javascript:;">역사·영토문제 조사 및 연구사업</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">역사·영토현안 학술대응 연구 </a></li>
+                                                                <li><a href="javascript:;">역사·영토 공유플랫폼 구축 </a></li>
+                                                                <li><a href="javascript:;">연구성과 확산</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">역사영토 현안 정책대응 사업</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">현안 모니터링 및 정책대응 </a></li>
+                                                                <li><a href="javascript:;">국내외 전략 네트워크</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">역사인식 교육·홍보사업</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">동북아 역사현안 교육연수 </a></li>
+                                                                <li><a href="javascript:;">독도체험</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </li>
+                            <li><a href="javascript:;"><span>알림마당</span></a>
+                                <div class="dep_con">
+                                    <div class="dep_inner">
+                                        <div class="dep_info">
+                                            <div class="dep_tit">알림마당</div>
+                                            <div class="dep_txt">동북아시아 역사 연구의 중심,<br>
+                                                동북아역사재단입니다.</div>
+                                        </div>
+                                        <div class="dep_sec_box">
+                                            <div class="dep_02_wrap">
+                                                <ul class="dep_02">
+                                                    <li><a href="javascript:;">공지사항</a></li>
+                                                    <li><a href="javascript:;">재단활동</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">재단소식</a></li>
+                                                                <li><a href="javascript:;">재단관련 언론보도</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">보도자료</a></li>
+                                                    <li><a href="javascript:;">뉴스레터</a></li>
+                                                    <li><a href="javascript:;">재단브로슈어</a></li>
+                                                    <li><a href="javascript:;">재단홍보동영상</a></li>                           
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </li>
+                            <li><a href="javascript:;"><span>자료마당</span></a>
+                                <div class="dep_con">
+                                    <div class="dep_inner">
+                                        <div class="dep_info">
+                                            <div class="dep_tit">자료마당</div>
+                                            <div class="dep_txt">동북아시아 역사 연구의 중심,<br>
+                                                동북아역사재단입니다.</div>
+                                        </div>
+                                        <div class="dep_sec_box">
+                                            <div class="dep_02_wrap">
+                                                <ul class="dep_02">
+                                                    <li><a href="javascript:;">정책자료</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">동북아역사포커스</a></li>
+                                                                <li><a href="javascript:;">동북아역사리포트</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">간행물</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">간행도서</a></li>
+                                                                <li><a href="javascript:;">동북아역사논총</a></li>
+                                                                <li><a href="javascript:;">JNAH(영문저널)</a></li>
+                                                                <li><a href="javascript:;">영토해양연구</a></li>
+                                                                <li><a href="javascript:;">JTMS(영문저널)</a></li>
+                                                                <li><a href="javascript:;">장애인용 오디오북</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">역사현안동영상</a></li>
+                                                    <li><a href="javascript:;">자료집</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">학술행사자료집</a></li>
+                                                                <li><a href="javascript:;">기타자료집</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </li>                            
+                            <li><a href="javascript:;"><span>참여마당</span></a>
+                                <div class="dep_con">
+                                    <div class="dep_inner">
+                                        <div class="dep_info">
+                                            <div class="dep_tit">참여마당</div>
+                                            <div class="dep_txt">동북아시아 역사 연구의 중심,<br>
+                                                동북아역사재단입니다.</div>
+                                        </div>
+                                        <div class="dep_sec_box">
+                                            <div class="dep_02_wrap">
+                                                <ul class="dep_02">
+                                                    <li><a href="javascript:;">자유게시판</a></li>
+                                                    <li><a href="javascript:;">민원신청</a></li>
+                                                    <li><a href="javascript:;">청렴신문고</a></li>
+                                                    <li><a href="javascript:;">공공재정환수제도 신고센터</a></li>
+                                                    <li><a href="javascript:;">독도체험관 방문예약</a></li>
+                                                    <li><a href="javascript:;">Contact US</a></li>
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="javascript:;"><span>정보공개</span></a>
+                                <div class="dep_con">
+                                    <div class="dep_inner">
+                                        <div class="dep_info">
+                                            <div class="dep_tit">정보공개</div>
+                                            <div class="dep_txt">동북아시아 역사 연구의 중심,<br>
+                                                동북아역사재단입니다.</div>
+                                        </div>
+                                        <div class="dep_sec_box">
+                                            <div class="dep_02_wrap">
+                                                <ul class="dep_02">
+                                                    <li><a href="javascript:;">정보공개제도안내</a></li>
+                                                    <li><a href="javascript:;">비공개대상정보안내</a></li>
+                                                    <li><a href="javascript:;">사전정보공개</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">경영공시</a></li>
+                                                                <li><a href="javascript:;">친인척채용정보공개</a></li>
+                                                                <li><a href="javascript:;">점자 문서 제공 실적공개</a></li>
+                                                                <li><a href="javascript:;">기부금 모금액 및 활용실적</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">정보공개청구</a></li>
+                                                    <li><a href="javascript:;">공공데이터개방</a></li>
+                                                    <li><a href="javascript:;">사업실명제</a></li>
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="javascript:;"><span>재단소개</span></a>
+                                <div class="dep_con">
+                                    <div class="dep_inner">
+                                        <div class="dep_info">
+                                            <div class="dep_tit">재단소개</div>
+                                            <div class="dep_txt">동북아시아 역사 연구의 중심,<br>
+                                                동북아역사재단입니다.</div>
+                                        </div>
+                                        <div class="dep_sec_box">
+                                            <div class="dep_02_wrap">
+                                                <ul class="dep_02">
+                                                    <li><a href="javascript:;">비전 및 전략</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">비전 및 목표</a></li>
+                                                                <li><a href="javascript:;">재단정관</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">이사장</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">인사말</a></li>
+                                                                <li><a href="javascript:;">약력</a></li>
+                                                                <li><a href="javascript:;">역대이사장</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">사무총장</a></li>
+                                                    <li><a href="javascript:;">연혁</a></li>
+                                                    <li><a href="javascript:;">일반현황</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">조직도</a></li>
+                                                                <li><a href="javascript:;">재단로고</a></li>
+                                                            </ul>    
+                                                        </div>
+                                
+                                                    </li>
+                                                    <li><a href="javascript:;">윤리경영</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">고객헌장</a></li>
+                                                                <li><a href="javascript:;">임직원행동강령</a></li>
+                                                                <li><a href="javascript:;">클린신고센터</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">인권경영</a>
+                                                        <div class="dep_03_wrap">
+                                                            <ul class="dep_03">
+                                                                <li><a href="javascript:;">인권경영선언문</a></li>
+                                                                <li><a href="javascript:;">인권경영 추진전략</a></li>
+                                                                <li><a href="javascript:;">인권침해 구제절차</a></li>
+                                                            </ul>    
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="javascript:;">오시는길</a></li>
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </li>
+                        </ul>
+                    </div>                     
+                    <ul class="menu_area">
+                        <li class="search_area">
+                            <button type="button" class="btn_s_menu"><span class="blind">search</span></button>
+                            <button type="button" class="btn_close search"><span class="blind">close search</span></button>
+                            <div class="search_box">
+                                <div class="inner">
+                                    <div class="search_inner">
+                                        <label for="search_text" class="s_tit">통합<span class="fc_01">검색</span></label>
+                                        <div class="search_con">
+                                            <input type="text" name="searchWord" id="search_text" placeholder="검색어를 입력하세요" class="search_text">
+                                            <button class="btn_t_search"><span class="blind">검색</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </li>
+                        <li class="btn_mobmenu_box">
+                            <button type="button" class="btn_mobmenu"><span class="blind">mobile menu</span></button>
+                            <button type="button" class="btn_close menu"><span class="blind">close menu</span></button>
+                        </li>
+                        <li class="btn_all_box"><button type="button" class="btn_all"><span class="blind">all menu</span></button></li>
+                        <li class="quick_area">
+                            <div class="qui_menu">
+                                <button type="button" class="btn_quick"><span>QUICK MENU</span></button>
+                                <div class="quick_box_wrap">
+                                    <ul class="quick_box">
+                                        <li><a href="javascript:;" class="quick01"><span>방문 · 예약하기</span></a></li>
+                                        <li><a href="javascript:;" class="quick02"><span>역사동영상</span></a></li>
+                                        <li><a href="javascript:;" class="quick03"><span>오시는길</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //gnb_area -->
+        </div>
+        <!-- //header_wrap -->
+
+        <!-- body_wrap -->
+        <div class="body_wrap">
+            <!-- visual_area -->
+            <div class="visual_area visual01">
+                <div class="inner">
+                    <h2 class="sulist_title">1depth  메뉴</h2>
+                    <ul class="location is_pc">
+                        <li><a href="javascript:;" class="home"><span class="blind">home</span></a></li>
+                        <li><a href="javascript:;">1depth</a></li>
+                        <li><a href="javascript:;">2depth</a></li>
+                        <li class="active"><a href="javascript:;">3depth</a></li>
+                    </ul>
+                </div>            
+            </div>
+            <!-- visual_area -->
+
+            <!-- body_area -->
+            <div class="body_area">
+                <div class="inner">
+                    <!-- snb_area -->
+                    <div class="snb_area">
+                        <ul class="dep_01">
+                            <li><a href="javascript:;"><h2 class="snlist_title">1depth </h2></a>
+                                <ul class="dep_02 dep_ty02">
+                                    <li class="is_active"><a href="javascript:;">2depth</a>
+                                        <ul class="dep_03">
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">2depth</a>
+                                        <ul class="dep_03">
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">2depth</a>
+                                        <ul class="dep_03">
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">2depth</a>
+                                        <ul class="dep_03">
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">2depth</a>
+                                        <ul class="dep_03">
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">2depth</a>
+                                        <ul class="dep_03">
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">2depth</a>
+                                        <ul class="dep_03">
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:;">2depth</a>
+                                        <ul class="dep_03">
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                            <li><a href="javascript:;">3depth</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>                          
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //snb_area -->
+                    <!-- con_wrap -->
+                    <div class="con_wrap">
+                        <div class="tit_area">
+                            <div class="tit_box">
+                                <h3 class="con_tit">게시판(기본형)</h3>
+                                <a href="javascript:;" class="btnbase_m out_white">온라인투고신청</a>
+                                <ul class="location is_mob">
+                                    <li><a href="javascript:;" class="home"><span class="blind">home</span></a></li>
+                                    <li><a href="javascript:;">1depth</a></li>
+                                    <li><a href="javascript:;">2depth</a></li>
+                                    <li class="active"><a href="javascript:;">3depth</a></li>
+                                </ul>
+                            </div>
+                            <div class="share_box">
+                                <div class="sns_list">
+                                    <a href="javascript:;" class="btn_share"><span class="blind">page share</span></a>
+                                    <div class="addthis_inline_share_toolbox"></div> <!-- addthis: sns -->
+                                </div>
+                                <div class="addthis_list">
+                                    <div class="addthis_inline_share_toolbox_jlx1"></div> <!-- addthis: print, link -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- con_area -->
+                        <div class="con_area" id="skip_con">
+
+                            <div class="comp_box">
+                                <div class="comp_tit">화면패턴</div>
+                                <div class="comp_tit02">목록(기본형)</div>
+                                ㄴ<a href="./list.html" style="text-decoration:underline;" target="_blank">목록(기본형) 바로가기</a>
+                                <div class="comp_tit02">목록(썸네일형)</div>
+                                ㄴ<a href="./list_thumb.html" style="text-decoration:underline;" target="_blank">목록(썸네일형) 바로가기</a>
+                                <div class="comp_tit02">목록(공지+썸네일리스트형)</div>
+                                ㄴ<a href="./list_notice_thumb.html" style="text-decoration:underline;" target="_blank">목록(공지+썸네일리스트형) 바로가기</a>
+                                <div class="comp_tit02">게시판 상세</div>
+                                ㄴ<a href="./view.html" style="text-decoration:underline;" target="_blank">상세 바로가기</a>
+                                <div class="comp_tit02">게시판 상세(댓글, 간행도서)</div>
+                                ㄴ<a href="./view_comment.html" style="text-decoration:underline;" target="_blank">상세 바로가기</a>
+                                <div class="comp_tit02">게시판 등록</div>
+                                ㄴ<a href="./write.html" style="text-decoration:underline;" target="_blank">등록 바로가기</a>
+                                <div class="comp_tit02">본인인증 입력 폼</div>
+                                ㄴ<a href="./auth_form.html" style="text-decoration:underline;" target="_blank">등록 바로가기</a>
+                                <div class="comp_tit02">본인인증 휴대폰/아이핀</div>
+                                ㄴ<a href="./auth_button.html" style="text-decoration:underline;" target="_blank">등록 바로가기</a>
+                                <div class="comp_tit02">간행도서_얼럿</div>
+                                ㄴ<a href="./../FO_4000/FO_4715-간행도서_얼럿.html" style="text-decoration:underline;" target="_blank">등록 바로가기</a>
+
+                            </div>
+
+
+                            <div class="comp_box">
+                                <div class="comp_tit">txt box</div>
+
+                                <!-- info_box : 텍스트박스 -->
+                                <div class="info_box bg_type01">
+                                    <div class="tit">「공공재정 부정청구 금지 및 부정이익 환수 등에 관한 법률(약칭 : 공공재정환수법)」 개요</div>
+                                    <ul class="list">
+                                        <li>
+                                            <strong>목적</strong>
+                                            <span>공공재정의 부정청구를 금지하고 부정청구로 인해 잘못 지급된 금액은 해당기관이 환수하여 공공재정의 건전성과 투명성을 제고</span>
+                                        </li>
+                                        <li>
+                                            <strong>공공재정지급금</strong>
+                                            <span>법령 또는 자치법규에 따라 공공재정에서 제공되는 보조금, 보상금, 출연금이나 그 밖에 상당한 반대급부를 받지 아니하고 제공되는 금품 등으로서 대통령령을 정하는 것을 말함.</span>
+                                        </li>
+                                        <li>
+                                            <strong>부정청구 유형</strong>
+                                            <span>①허위청구, ②과다청구, ③목적외 사용, ④오지급</span>
+                                        </li>
+                                        <li>
+                                            <strong>부정이익의 환수</strong>
+                                            <span>①허위청구 : 부정이익 가액×5, ②과다청구 : 부정이익 가액×3, ③목적외 사용: 부정이익 가액×2</span>
+                                        </li>
+                                        <li><span>매년 직전 연도부터 과거 3년간의 고액부정청구 등 행위자 명단 공표</span></li>
+                                        <li><span>재단 사업 외 부정청구 신고는 국민권익위원회 청렴포털(<a href="javascript:;"class="a_link" target="_blank" title="새창열림">www.clean.go.kr</a>)에서 신고하시기 바랍니다.</span></li>
+                                    </ul>
+                                </div>
+                                <!-- //info_box : 텍스트박스 -->
+                            </div>
+                            
+                            <div class="comp_box">
+                                <div class="comp_tit">담당자box</div>
+
+                                <!-- info_box.bg_type02 : 간행번호box -->
+                                <div class="info_box bg_type02">
+                                    <strong class="tit">동북아역사논총</strong>
+                                    <span class="num">ISSN 1975-7840 /eISSN 2713-928x</span>
+                                </div>
+                                <!-- //info_box.bg_type02 : 간행번호box -->
+                            </div>
+                            
+                            <div class="comp_box">
+                                <div class="comp_tit">본인인증 서비스 안내</div>
+
+                                <div class="info_box bg_type03">
+                                    <div class="tit">본인인증서비스</div>
+                                    <div class="txt01"><strong>휴대폰인증 본인확인서비스 및 공공 I-PIN인증 페이지입니다. 원하시는 인증방법을 선택하세요.</strong></div> 
+                                    <div class="txt02">
+                                        동북아역사재단 홈페이지에서 보다 많은 사용자들의 원활한 서비스 이용과 온라인 상에서의 익명 사용으로 인한 피해 등을 방지하기 위해 본인인증서비스를 시행하고 있습니다.<br>
+                                        본인확인이 필요한 콘텐츠 이용시 휴대폰인증/공공 I-PIN인증으로 본인확인 절차를 수행합니다.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="comp_box">
+                                <div class="comp_tit">안내 텍스트</div>
+
+                                <div class="info_box bg_type01">
+                                    <div class="tit">동북아역사재단 역대이사장</div>
+                                    <div class="txt01">국민의 목소리에 귀기울이며 동북아시아의 바른 역사 정립을 위해 노력해오신 동북아역사재단의 역대 이사장을 소개합니다.</div>
+                                </div>
+                            </div>
+
+
+                            <div class="comp_box">
+                                <div class="comp_tit">저작권 안내</div>
+                                <!-- 저작권 안내 -->
+                                <div class="kogl_open">
+                                    <p class="pic">
+                                        <a href="http://www.kogl.or.kr/open/info/license_info/all.do" target="_blank" title="새창열림">
+                                            <img src="../../assets/images/common/img_opencode.png" alt="OPEN 공공누리 - 공공저작물 자유이용 허락(출처표시 - 상업적이용금지 - 변경금지)">
+                                        </a>
+                                    </p>	
+                                    <p class="info">
+                                        동북아역사재단이 창작한 '동북아역사재단 온라인 서포터즈 4기 모집공고' 저작물은 <br>
+                                        "공공누리" <a href="http://www.kogl.or.kr/open/info/license_info/all.do" target="_blank" title="새창열림">출처표시-상업적이용금지-변경금지</a>
+                                        조건에 따라 이용 할 수 있습니다.
+                                    </p>
+                                </div>  
+                                <!-- //저작권 안내 -->  
+                            </div>
+
+                            <div class="comp_box">
+                                <div class="comp_tit">게시판(기본형)</div>
+                                <div class="comp_tit02">목록(기본형) : 목록 total</div>
+                                
+                                <!-- board_total : 목록 total -->
+                                <div class="board_total">
+                                    <div class="fl total_box">
+                                        <div class="t_txt_box"><span class="t_txt">총 게시물</span> <em class="fc_01">203</em></div>
+                                        <div class="t_txt_box"><span class="t_txt">페이지</span> <em class="fc_01">1</em><span class="t_bar">21</span></div>
+                                    </div>
+                                    <div class="fr board_search">
+                                        <!-- search_sel -->
+                                        <div class="search_sel">
+                                            <select id="cat1_0" title="sortation" name="cat1_0" class="cws_inputfield">
+                                                <option value="">전체</option>
+                                                <option value="CWS126">일반공지</option>
+                                                <option value="CWS127">연구용역지원</option>
+                                                <option value="CWS128">시민단체지원</option>
+                                                <option value="CWS129">교육연수</option>
+                                                <option value="CWS130">채용공고 </option>
+                                                <option value="CWS131">입찰공고</option>
+                                            </select>
+                                        </div>
+                                        <!-- //search_sel -->
+                                        <!-- search_sel -->
+                                        <div class="search_sel">
+                                            <select name="search_item" title="searching condition" class="search_item">
+                                                <option value="title">제목</option>
+                                                <option value="body">내용</option>
+                                            </select>
+                                        </div>
+                                        <!-- //search_sel -->
+                                        <!-- search_input -->
+                                        <div class="search_input">
+                                            <input type="text" name="board_search_keyword" id="board_search_keyword" title="검색어 입력창" value="">
+                                            <button class="btn_search"><span class="blind">검색</span></button>	
+                                        </div>
+                                        <!-- //search_input -->
+                                    </div>
+                                </div>
+                                <!-- //board_total : 목록 total -->
+
+                                <div class="comp_tit02">목록(기본형) : 목록 list</div>
+                                <!-- board_list : 목록 list -->
+                                <div class="board_list">
+                                    <table>
+                                        <caption>공지사항게시판 목록 : 번호, 구분, 제목, 작성일, 조회수, 파일 정보 제공</caption>
+                                        <colgroup>
+                                            <col class="list_number">
+                                            <col class="list_category">
+                                            <col class="list_title">
+                                            <col class="list_date">
+                                            <col class="list_count">
+                                            <col class="list_file">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="list_number">번호</th>
+                                                <th scope="col" class="list_category">구분</th>
+                                                <th scope="col" class="list_title">제목</th>
+                                                <th scope="col" class="list_date">작성일</th>
+                                                <th scope="col" class="list_count">조회수</th>
+                                                <th scope="col" class="list_file">파일</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="notice">
+                                                <td class="list_number"><span class="tag_txt">공지</span></td>
+                                                <td class="list_category">일반공지</td>
+                                                <td class="list_title new"><a href="javascript:;">제27회 동해 지명과 바다 이름에 관한 국제 세미나 디지털 시대의 지명 <span class="ico_att_new">new</span></a></td>
+                                                <td class="list_date">2022.01.20</td>
+                                                <td class="list_count">472</td>
+                                                <td class="list_file"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="list_number"><span class="num_txt">1468</span></td>
+                                                <td class="list_category">일반공지</td>
+                                                <td class="list_title"><a href="javascript:;">제27회 동해 지명과 바다 이름에 관한 국제 세미나 디지털 시대의 지명</a></td>
+                                                <td class="list_date">2022.01.20</td>
+                                                <td class="list_count">472</td>
+                                                <td class="list_file"><span class="ico_att_pdf"><span class="blind">pdf attachments</span></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="list_number"><span class="num_txt">1468</span></td>
+                                                <td class="list_category">일반공지</td>
+                                                <td class="list_title"><a href="javascript:;">제27회 동해 지명과 바다 이름에 관한 국제 세미나 디지털 시대의 지명</a></td>
+                                                <td class="list_date">2022.01.20</td>
+                                                <td class="list_count">472</td>
+                                                <td class="list_file"><span class="ico_att_excel"><span class="blind">excel attachments</span></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="list_number"><span class="num_txt">1468</span></td>
+                                                <td class="list_category">일반공지</td>
+                                                <td class="list_title"><a href="javascript:;">제27회 동해 지명과 바다 이름에 관한 국제 세미나 디지털 시대의 지명</a></td>
+                                                <td class="list_date">2022.01.20</td>
+                                                <td class="list_count">472</td>
+                                                <td class="list_file"><span class="ico_att_power"><span class="blind">powerpoint attachments</span></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="list_number"><span class="num_txt">1468</span></td>
+                                                <td class="list_category">일반공지</td>
+                                                <td class="list_title"><a href="javascript:;">제27회 동해 지명과 바다 이름에 관한 국제 세미나 디지털 시대의 지명</a></td>
+                                                <td class="list_date">2022.01.20</td>
+                                                <td class="list_count">472</td>
+                                                <td class="list_file"><span class="ico_att_img"><span class="blind">img attachments</span></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="list_number"><span class="num_txt">1468</span></td>
+                                                <td class="list_category">일반공지</td>
+                                                <td class="list_title"><a href="javascript:;">제27회 동해 지명과 바다 이름에 관한 국제 세미나 디지털 시대의 지명</a></td>
+                                                <td class="list_date">2022.01.20</td>
+                                                <td class="list_count">472</td>
+                                                <td class="list_file"><span class="ico_att_word"><span class="blind">word attachments</span></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="list_number"><span class="num_txt">1468</span></td>
+                                                <td class="list_category">일반공지</td>
+                                                <td class="list_title"><a href="javascript:;">제27회 동해 지명과 바다 이름에 관한 국제 세미나 디지털 시대의 지명</a></td>
+                                                <td class="list_date">2022.01.20</td>
+                                                <td class="list_count">472</td>
+                                                <td class="list_file"><span class="ico_att_hwp"><span class="blind">hwp attachments</span></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="list_number"><span class="num_txt">1468</span></td>
+                                                <td class="list_category">일반공지</td>
+                                                <td class="list_title"><a href="javascript:;">제27회 동해 지명과 바다 이름에 관한 국제 세미나 디지털 시대의 지명</a></td>
+                                                <td class="list_date">2022.01.20</td>
+                                                <td class="list_count">472</td>
+                                                <td class="list_file"><span class="ico_att_zip"><span class="blind">zip attachments</span></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="list_number"><span class="num_txt">1468</span></td>
+                                                <td class="list_category">일반공지</td>
+                                                <td class="list_title"><a href="javascript:;">제27회 동해 지명과 바다 이름에 관한 국제 세미나 디지털 시대의 지명</a></td>
+                                                <td class="list_date">2022.01.20</td>
+                                                <td class="list_count">472</td>
+                                                <td class="list_file"><span class="ico_att_video"><span class="blind">video attachments</span></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="list_number"><span class="num_txt">1468</span></td>
+                                                <td class="list_category">일반공지</td>
+                                                <td class="list_title"><a href="javascript:;">제27회 동해 지명과 바다 이름에 관한 국제 세미나 디지털 시대의 지명</a></td>
+                                                <td class="list_date">2022.01.20</td>
+                                                <td class="list_count">472</td>
+                                                <td class="list_file"><span class="ico_att_folder"><span class="blind">folder attachments</span></span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- //board_list : 목록 list -->
+
+                                <div class="comp_tit02">목록(기본형) : 데이터 없을 때</div>
+                                <!-- board_list -->
+                                <div class="board_list">
+                                    <table>
+                                        <caption>공지사항게시판 목록 : 번호, 구분, 제목, 작성일, 조회수, 파일 정보 제공</caption>
+                                        <colgroup>
+                                            <col class="list_number">
+                                            <col class="list_category">
+                                            <col class="list_title">
+                                            <col class="list_date">
+                                            <col class="list_count">
+                                            <col class="list_file">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="list_number">번호</th>
+                                                <th scope="col" class="list_category">구분</th>
+                                                <th scope="col" class="list_title">제목</th>
+                                                <th scope="col" class="list_date">작성일</th>
+                                                <th scope="col" class="list_count">조회수</th>
+                                                <th scope="col" class="list_file">파일</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="nodata">
+                                                <td colspan="6"><span class="ico_nodata">등록된 정보가 없습니다.</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- //board_list -->
+
+                                <div class="comp_tit02">목록(스크롤형) : 모바일에서 스크롤</div>
+                                <!-- 목록(스크롤형) -->
+                                <div class="board_wrap">
+                                    <div class="scroll_txt">좌우스크롤로 이동 할 수 있습니다.</div>
+                                    <div class="board_basic scroll">
+                                        <table>
+                                            <caption>
+                                            운영관리실 직원안내: 실명, 성명, 담당업무, 전화번호로 구성
+                                            </caption>
+                                            <colgroup>
+                                                <col class="view_part">
+                                                <col class="view_name">
+                                                <col class="view_work">
+                                                <col class="view_tel">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th class="view_part">부서명</th>
+                                                    <th class="view_name">성명</th>
+                                                    <th class="view_work">담당업무</th>
+                                                    <th class="view_tel">전화번호</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="view_part">이사장실</td>
+                                                    <td class="view_name">
+                                                    이영호
+                                                        <br />Lee, Young Ho<br />李榮昊
+                                                    </td>
+                                                    <td class="view_work">- 이사장<br /></td>
+                                                    <td class="view_tel"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="view_part">이사장실</td>
+                                                    <td class="view_name">
+                                                    이소라
+                                                        <br />Lee, So Ra<br />李소라
+                                                    </td>
+                                                    <td class="view_work">- 비서<br />- 임원보좌 및 비서업무</td>
+                                                    <td class="view_tel">(02) 2012-6008</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="view_part">이사장실</td>
+                                                    <td class="view_name">
+                                                    최생균
+                                                        <br />Choi, Saeng Kyun<br />崔生均
+                                                    </td>
+                                                    <td class="view_work">- 수행비서<br />- 임원보좌 및 수행업무</td>
+                                                    <td class="view_tel">(02) 2012-6008</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="view_part">이사장실</td>
+                                                    <td class="view_name">
+                                                    추연용
+                                                        <br />Choo, Yeon Yong<br />秋淵龍
+                                                    </td>
+                                                    <td class="view_work">- 보좌관<br />- 임원보좌 및 비서업무</td>
+                                                    <td class="view_tel">(02) 2012-6008</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- //목록(스크롤형) -->
+
+                                <div class="comp_tit02">목록(기본형) : 페이지네이션</div>
+                                <!-- 페이지네이션  -->
+                                <div class="page_list">
+                                    <div class="page_inner">
+                                        <a class="btn_pgstart disabled" href="javascript:;"><span class="blind">맨 처음으로 이동</span></a>
+                                        <a class="btn_pgprev disabled" href="javascript:;"><span class="blind">이전으로 이동</span></a>
+                                        <ul class="">
+                                            <li class="is_active"><a href="javascript:;">1</a></li>
+                                            <li><a href="javascript:;">2</a></li>
+                                            <li><a href="javascript:;">3</a></li>
+                                            <li><a href="javascript:;">4</a></li>
+                                            <li><a href="javascript:;">5</a></li>
+                                            <li><a href="javascript:;">6</a></li>
+                                            <li><a href="javascript:;">7</a></li>
+                                            <li><a href="javascript:;">8</a></li>
+                                            <li><a href="javascript:;">9</a></li>
+                                            <li><a href="javascript:;">10</a></li>
+                                        </ul>
+                                        <a class="btn_pgnext" href="javascript:;"><span class="blind">다음으로 이동</span></a>
+                                        <a class="btn_pglast" href="javascript:;"><span class="blind">맨 뒤로 이동</span></a>
+                                    </div>
+                                </div>
+                                <!-- //페이지네이션  -->
+
+                                <div class="comp_tit02">목록(기본형) : 하단버튼</div>
+                                <!-- btn_box -->
+                                <div class="btn_box">
+                                    <div class="fr">
+                                        <a href="javascript:;" class="btnbase_l secondary">글쓰기</a>
+                                    </div>
+                                </div>
+                                <!-- //btn_box -->
+                            </div>
+                            
+                            <div class="comp_box">
+                                <div class="comp_tit">상단버튼,간행번호box</div>
+
+                                <!-- 담당자box -->
+                                <div class="part_box">
+                                    <div class="p_tit">메뉴담당자</div>
+                                    <div class="p_txt_box">
+                                        <span class="p_txt">대표번호<em class="fc_01">02-2012-6000</em></span>
+                                        <span class="p_txt">교류홍보실<em class="fc_01">6144</em></span>
+                                    </div>
+                                </div>
+                                <!-- //담당자box -->
+                            </div>
+
+                            <div class="comp_box">
+                                <div class="comp_tit">버튼</div>
+                                <div class="comp_tit02">기본</div>
+
+                                <!-- btn_box : 기본 -->
+                                <div class="btn_box">
+                                    <a href="javascript:;" class="btnbase_l primary">목록</a>
+                                    <a href="javascript:;" class="btnbase_l secondary">글쓰기</a>
+                                    <a href="javascript:;" class="btnbase_m out_black">자세히 보기</a>
+                                    <a href="javascript:;" class="btnbase_m out_white">온라인투고신청</a>
+                                    <a href="javascript:;" class="btnbase_s">버튼</a>
+                                    <a href="javascript:;" class="btnbase_s link">자세히보기</a>
+                                    <a href="javascript:;" class="btnbase_s down">한국어PDF 다운로드</a>
+                                </div>
+                                <!-- //btn_box : 기본 -->
+                                
+                                <div class="comp_tit02">disabled</div>
+                                <!-- btn_box : disabled -->
+                                <div class="btn_box">
+                                    <a href="javascript:;" class="disabled btnbase_l primary">목록</a>
+                                    <a href="javascript:;" class="disabled btnbase_l secondary">글쓰기</a>
+                                    <a href="javascript:;" class="disabled btnbase_m out_black">자세히 보기</a>
+                                    <a href="javascript:;" class="disabled btnbase_m out_white">온라인투고신청</a>
+                                    <a href="javascript:;" class="disabled btnbase_s">버튼</a>
+                                    <a href="javascript:;" class="disabled btnbase_s link">자세히보기</a>
+                                    <a href="javascript:;" class="disabled btnbase_s down">한국어PDF 다운로드</a>
+                                </div>
+                                <!-- //btn_box : disabled -->
+
+                                <div class="comp_tit02">오른쪽 정렬 - 버튼 1개</div>
+                                <div class="btn_box">
+                                    <div class="fr">
+                                        <a href="javascript:;" class="btnbase_l secondary">글쓰기</a>
+                                    </div>
+                                </div>
+
+                                <div class="comp_tit02">가운데 정렬 - 버튼 1개</div>
+                                <div class="btn_box">
+                                    <div class="fc"><a href="javascript:;" class="btnbase_l primary">목록</a></div>
+                                </div>
+                                
+                                <div class="comp_tit02">가운데 정렬 - 버튼 2개 이상</div>
+                                <div class="btn_box">
+                                    <ul class="fc">
+                                        <li><a href="javascript:;" class="btnbase_l secondary">등록</a></li>
+                                        <li><a href="javascript:;" class="btnbase_l primary">취소</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="comp_tit02">가운데 정렬 - 버튼 2개 이상 홀수개</div>
+                                <div class="btn_box">
+                                    <ul class="fc">
+                                        <li><a href="javascript:;" class="btnbase_l secondary">수정</a></li>
+                                        <li><a href="javascript:;" class="btnbase_l secondary">삭제</a></li>
+                                        <li><a href="javascript:;" class="btnbase_l primary">목록</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="comp_tit02">모바일 가운데 정렬</div>
+                                <div class="btn_box mob_center">
+                                    <div class="fl">
+                                        <a href="https://www.open.go.kr" target="_blank" title="새창 열림" class="btnbase_m out_white">정보공개신청하기</a>
+                                    </div>
+                                </div>
+
+                                <div class="comp_tit02">pc mob 버튼 위치 이동</div>
+                                <div class="type_btn">
+                                    <div class="txt_btn_box">
+                                        <div class="tb_top list-star">
+                                            <strong class="fc_02">*pc - 위 / mob - 아래 : 주요클래스 .tb_top</strong>
+                                        </div>
+                                        <div class="btn_box mob_center">
+                                            <div class="fl">
+                                                <a href="https://www.open.go.kr" target="_blank" title="새창 열림" class="btnbase_m out_white">pc - 아래 / mob - 위</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="comp_box">
+                                <div class="comp_tit">입력요소</div>
+
+                                <div class="board_write">
+
+                                    <div class="board_table">
+                                        <table>
+                                            <caption>게시판(등록) 표 - 제목, 작성자, 연락처, 이메일로 구성</caption>
+                                            <colgroup>
+                                                <col style="width:180px;">
+                                                <col>
+                                                <col style="width:180px;">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th><label for="input01">default</label></th>
+                                                    <td><div class="form_input"><input type="text" id="input01" placeholder="제목을 입력해주세요. Hint Text"></div></td>
+                                                    <th><label for="input02">disabled</label></th>
+                                                    <td><div class="form_input"><input type="text" id="input02" placeholder="제목을 입력해주세요. Hint Text" disabled></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <th><label for="select01">default</label></th>
+                                                    <td>                                                        
+                                                        <div class="form_select">
+                                                            <select title="이메일 도메인 분류 선택" id="select01">
+                                                                <option>gmail.com</option>
+                                                                <option></option>
+                                                                <option></option>
+                                                            </select>
+                                                        </div>
+                                                    </td>
+                                                    <th><label for="select02">disabled</label></th>
+                                                    <td>                                                        
+                                                        <div class="form_select">
+                                                            <select title="이메일 도메인 분류 선택" disabled id="select02">
+                                                                <option>gmail.com</option>
+                                                                <option></option>
+                                                                <option></option>
+                                                            </select>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>default</th>
+                                                    <td>
+                                                        <div class="form_txt_lgth">
+                                                            <div class="txt">※ 글자수는 10000자 이내로 제한됩니다.</div>
+                                                            <div class="lgth">
+                                                                <span>현재 글자수</span>
+                                                                <strong data-textarea-cnt="txt_cnt01">0</strong>
+                                                                <span>자</span>                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="form_textarea"><textarea title="내용 입력" maxlength="10000" data-textarea="txt_cnt01"></textarea></div>
+                                                    </td>
+                                                    <th>disabled</th>
+                                                    <td>
+                                                        <div class="form_txt_lgth">
+                                                            <div class="txt">※ 글자수는 10000자 이내로 제한됩니다.</div>
+                                                            <div class="lgth">
+                                                                <span>현재 글자수</span>
+                                                                <strong data-textarea-cnt="txt_cnt02">0</strong>
+                                                                <span>자</span>                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="form_textarea"><textarea title="내용 입력" disabled maxlength="10000" data-textarea="txt_cnt02"></textarea></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>email</th>
+                                                    <td colspan="3">
+                                                        <ul class="form_email">
+                                                            <li class="form_input"><input type="text" id="email" title="이메일 계정 입력"></li>
+                                                            <li class="form_txt">@</li>
+                                                            <li class="form_input"><input type="text" title="이메일 도메인 입력" readonly></li>
+                                                            <li class="form_select">
+                                                                <select title="이메일 도메인 분류 선택">
+                                                                    <option>gmail.com</option>
+                                                                    <option></option>
+                                                                    <option></option>
+                                                                </select>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>비밀번호</th>
+                                                    <td colspan="3"><div class="form_input w200"><input type="password"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>단순 텍스트 출력용</th>
+                                                    <td colspan="3"><div class="form_txt">홍길동</div></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>                                
+
+                                </div>
+
+                            </div>
+                            
+                            <div class="comp_box">
+                                <div class="comp_tit">리스트</div>
+                                <ul class="info_list">
+                                    <li>모든 항목에 정보를 입력하셔야 게시물을 등록하실 수 있습니다.</li>
+                                    <li>비속어, 도배성 글을 입력 시 게시물을 등록하실 수 없습니다.</li>
+                                    <li class="fc_02">이메일과 비밀번호는 게시물 등록 이후 수정과 삭제 시 작성자를 확인하는 정보입니다. 강조컬러일 때 #AA5522</li>
+                                </ul>
+                            </div>
+
+                            <div class="comp_box">
+                                <div class="comp_tit">테이블형 리스트(PC - display:table / MOB - display:block)</div>
+                                <ul class="list_tbl">
+                                    <li>
+                                        <strong>이미지</strong>
+                                        <span>아시아를 나타내는 한자 ‘아(亞)’를 기본 모티브로 하여, 전통가옥, 마주보고 앉은 사람, 귀면(鬼面)의 세 가지 형상이 중복되어 보이도록 이미지를 형상화 하였다.</span>
+                                    </li>
+                                    <li>
+                                        <strong>의미</strong>
+                                        <span>동북아시아라는 한 지붕아래의 사람들이 서로 화합하여 평화와 안정을 이룬다는 의미를 표현한 것이다. 귀면형상은 동북아역사재단이 바른 역사를 정립함으로써 우리의 역사를 지킨다는 의미를 내포하고 있다.</span>
+                                    </li>
+                                    <li>
+                                        <strong>색상</strong>
+                                        <span>주요색조는 평화를 상징하는 녹색과 안정을 상징하는 갈색을 사용하였다.</span>
+                                    </li>
+                                </ul>
+                                <div class="comp_tit02">thead 없는 테이블 리스트</div>
+                                <div class="info_table">
+                                    <table>
+                                        <caption>
+                                            정보공개처리 절차(정보공개청구, 접수 및 이송, 공개여부결정, 공개여부 결정통지, 공개실시)의 관한 표
+                                        </caption>
+                                        <colgroup>
+                                            <col style="width:200px">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <p class="tit">접수 및 이송</p>
+                                                    <span>(주관부서)</span>
+                                                </th>
+                                                <td>
+                                                    <ul class="bull03">
+                                                        <li>해당 처리부서로 청구서 이송</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <p class="tit">공개여부결정</p>
+                                                    <span>(처리부서)</span>
+                                                </th>
+                                                <td>
+                                                    <ul class="bull03">
+                                                        <li>공개여부결정
+                                                            <ul class="list-bar">
+                                                                <li>- 공개대상정보가 제3자와 관련 있는 경우 제3자에게 통지</li>
+                                                                <li>- 필요시 제3자의 의견청취</li>
+                                                                <li class="list-sub-arr">제3자는 비공개 요청시 [제3자 의견서]를 제출</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>처리기간
+                                                            <ul class="list-bar">
+                                                                <li>- 10일 이내</li>
+                                                                <li class="list-sub-arr">부득이한 사유로 규정된 기간 이내에 공개여부를 결정할 수없을 때에는 1-일이내의 범위에서 결정기간 연장 가능</li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="comp_box">
+                                <div class="comp_tit">불릿 텍스트01</div>
+                                <div class="comp_tit02">레벨1</div>
+                                <p class="bull01">레벨 1 <strong>블록</strong> 태그로 사용 시</p>
+                                <ul class="bull01">
+                                    <li>레벨 1 리스트 태그로 사용 시</li>
+                                    <li>레벨 1 리스트 태그로 사용 시 리스트 태그로 사용 시</li>
+                                </ul>
+                                <p class="bull02">레벨 2 블록 태그로 사용 시</p>
+                                <ul class="bull02">
+                                    <li>레벨 2 리스트 태그로 사용 시</li>
+                                    <li>레벨 2 리스트 태그로 사용 시 리스트 태그로 사용 시</li>
+                                </ul>
+                                <ul class="list-num">
+                                    <li>1.불릿번호사용시</li>
+                                    <li>2.불릿번호사용시</li>
+                                </ul>
+                            </div>
+
+                            <div class="comp_box">
+                                <div class="comp_tit">불릿 텍스트02</div>
+
+                                <div class="clean_info">
+                                    <ul class="bull02">
+                                        <li> 
+                                            모바일에서 padding-left O(있는 경우) 타이틀 : fs: 17,color: #333
+                                            <p class="con_subtxt">내용입니다.</p>
+                                        </li>
+                                        <li>
+                                            모바일에서 padding-left X(없는 경우)
+                                            <p class="con_subtxt">일반텍스트 - fs: 16,color: #555</p>
+                                        </li>
+                                        <li>
+                                            블록 태그
+                                            <p class="con_txt"><strong class="fc_02">일반텍스트 - 강조시 / color: #714a12</strong></p>
+                                            <p class="con_subtxt"><strong>일반텍스트 - 강조시 / fw: 500</strong></p>
+                                        </li>
+                                        <li>
+                                            리스트 태그
+                                            <!-- bar 리스트 태그로 사용 시 -->
+                                            <ul class="list-bar">
+                                                <li>-  bar 리스트 태그로 사용 시</li>
+                                                <li class="list-sub-arr">리스트에 화살표 있을 시</li>
+                                                <li>-  dot 리스트 태그로 사용 시
+                                                    <!-- dot 리스트 태그로 사용 시 -->
+                                                    <ul class="list-dot">
+                                                        <li>내용입니다.</li>
+                                                        <li>내용입니다. 내용입니다. 내용입니다.</li>
+                                                    </ul>
+                                                    <!-- dot 리스트 태그로 사용 시 -->
+                                                </li>
+                                                <li>-  한글 리스트 태그로 사용 시
+                                                    <!-- 한글 리스트 태그로 사용 시 -->
+                                                    <ul class="list-han">
+                                                        <li>가. 내용입니다.</li>
+                                                        <li>나. 내용입니다. 내용입니다. 내용입니다.</li>
+                                                        <li>다. 내용입니다. 내용입니다. 내용입니다.내용입니다. 내용입니다. 내용입니다.</li>
+                                                    </ul>
+                                                    <!-- //한글 리스트 태그로 사용 시 -->
+                                                </li>
+                                                <li>-  숫자 리스트 태그로 사용 시
+                                                    <!-- 숫자 리스트 태그로 사용 시 -->
+                                                    <ul class="list-num">
+                                                        <li>1. 내용</li>
+                                                        <li>2. 내용</li>
+                                                        <li>3. 내용</li>
+                                                        <li>4. 내용</li>
+                                                        <li>5. 내용</li>
+                                                        <li>6. 내용</li>
+                                                        <li>7. 내용</li>
+                                                        <li>8. 내용</li>
+                                                        <li>9. 내용</li>
+                                                        <li class="ty02">10. bull 두자릿수일 때 - li에 ty02 붙임</li>
+                                                    </ul>
+                                                    <!-- //숫자 리스트 태그로 사용 시 -->
+                                                </li>
+                                                <li>- 회색 바 / a 태그 링크 이동
+                                                    <ul class="grey-list-bar">
+                                                        <li><a href="javascript:;" target="_blank" title="새창열림">내용</a></li>
+                                                        <li><a href="javascript:;" target="_blank" title="새창열림">내용</a></li>
+                                                        <li><a href="javascript:;" target="_blank" title="새창열림">내용</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <!-- bar 리스트 태그로 사용 시 -->
+                                        </li>
+                                    </ul>                                
+                                </div>
+                            </div>
+
+                            <div class="comp_box">
+                                <div class="comp_tit">텍스트</div>
+                                <div class="past_list txr">
+                                    <ul>
+                                        <li>제정 2009. 4. 1. 규칙 제33호</li>
+                                        <li>개정 2013.11.18. 규칙 제78호</li>
+                                        <li>개정 2015.12.23. 규칙 제112호</li>
+                                        <li>개정 2016. 3.11. 규칙 제126호</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="comp_box">
+                                <div class="comp_tit">간단한 연혁 리스트</div>
+                                <ul class="bhistory_list">
+                                    <li>
+                                        <strong>2021.12~</strong>
+                                        <span>동북아역사재단 제8대 사무총장</span>
+                                    </li>
+                                    <li>
+                                        <strong>2019~2021</strong>
+                                        <span>주뉴욕 총영사</span>
+                                    </li>
+                                    <li>
+                                        <strong>2018</strong>
+                                        <span>한미 방위비 분담 협상 정부 대표</span>
+                                    </li>
+                                    <li>
+                                        <strong>2014~2017</strong>
+                                        <span>주스리랑카 대사<br>아태통상과장, 동북아국장 역임<br>주일본, 주중국 대사관 근무</span>
+                                    </li>
+                                    <li>
+                                        <strong>1984</strong>
+                                        <span>외교부 입부(15회 외무고시)</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="comp_box">
+                                <div class="comp_tit">회색bg - font-size: 18</div>
+                                <div class="nv_con">
+                                    <div class="gray_box">
+                                        <p class="txc fs_18">
+                                            <strong>
+                                                국민의 의견에 귀 귀울이면서 우리의 역사와 영토주권을 침해하는 역사왜곡에 단호하게 대응하여 국민들이 신뢰하며,<br class="m_hidden">
+                                                높은수준의 연구성과를 바탕으로 합리적인 정책대안을 마련하는, 대한민국 동북아 역사·영토 연구와 정책의 대표
+                                            </strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="comp_box">
+                                <div class="comp_tit">회색bg - font-size: 16 하단 우측정렬</div>
+                                <div class="nv_con">
+                                    <div class="gray_box">
+                                        <p>
+                                            <strong>
+                                                동북아시아의 역사문제 및 독도 관련 사항에 대한 장기적·종합적인 연구·분석과 체계적·전략적 정책개발을 수행함으로써 바른
+                                                역사를 정립하고 동북아시아 지역의 평화 및 번영의 기반 마련
+                                            </strong>
+                                        </p>
+                                        <p class="txr">
+                                            <strong>
+                                                『동북아역사재단 설립·운영에 관한<br class="m_visible"> 법률 제1조(목적)』
+                                            </strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="comp_box">
+                                <div class="comp_tit">회색bg - 리스트번호</div>
+                                <div class="gray_box">
+                                    <p>
+                                        <strong>
+                                            동북아시아의 역사문제 및 독도 관련 사항에 대한 장기적·종합적인 연구·분석과 체계적·전략적 정책개발을 수행함으로써 바른
+                                            역사를 정립하고 동북아시아 지역의 평화 및 번영의 기반 마련
+                                        </strong>
+                                    </p>
+                                    <p class="txr">
+                                        <strong>
+                                        『동북아역사재단 설립·운영에 관한<br class="m_visible"> 법률 제1조(목적)』
+                                        </strong>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="comp_box">
+                                <div class="comp_tit">box 형태 - 회색border</div>
+                                <ul class="lay_box lay_ty01 nv_03">
+                                    <li class="ty01_item ty01">
+                                        <div class="lay_tit">
+                                            전문과 신뢰
+                                        </div>
+                                        <div class="lay_con">
+                                            연구성과와 수준을 향상시키며
+                                            동북아 역사·영토 분야의
+                                            권위자로서 국내외 학계의
+                                            주목을 받는다.
+                                        </div>
+                                    </li>
+                                    <li class="ty01_item ty02">
+                                        <div class="lay_tit">
+                                            시의적절과 실용
+                                        </div>
+                                        <div class="lay_con">
+                                            주요 현안 발생시 기민하게 대처하고
+                                            정부 및 관련기관들의 대응이
+                                            잘 이루어지도록 협력한다.
+                                        </div>
+                                    </li>
+                                    <li class="ty01_item ty03">
+                                        <div class="lay_tit">
+                                            확산과 공유
+                                        </div>
+                                        <div class="lay_con">
+                                            새로운 환경변화에 적극 대응하여
+                                            재단의 교육 및 홍보활동을
+                                            강화함으로써 국내외에
+                                            우리 역사에 대한 올바른 인식을
+                                            확산하고 공유한다.
+                                        </div>
+                                    </li>
+                                    <li class="ty01_item ty04">
+                                        <div class="lay_tit">
+                                            소통과 참여
+                                        </div>
+                                        <div class="lay_con">
+                                            내외부 이해관계자와
+                                            존중과 배려를 기반으로
+                                            소통과 열린 참여를
+                                            권장하는 자세를 가진다.
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="comp_box">
+                                <div class="comp_tit">box 형태 - 갈색 tit</div>
+                                <ul class="lay_box lay_ty02">
+                                    <li class="ty02_item">
+                                        <div class="lay_tit brown_bg">
+                                            역사왜곡 대응을 위한 역사·영토
+                                            연구와 정책개발·대응
+                                        </div>
+                                        <div class="lay_tit gray">
+                                            제도
+                                        </div>
+                                        <div class="lay_con dot">
+                                            <ul class="bull03">
+                                                <li>역사현안 조사·연구 기획 강화</li>
+                                                <li>연구행정 프로세스 개선</li>
+                                                <li>연구성과 축적 및 활용성 강화</li>
+                                                <li>역사왜곡 관련 체계적 정책개발 및 대응</li>
+                                                <li>우리 입장에 대한 국제적 지지 확보</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="ty02_item">
+                                        <div class="lay_tit brown_bg">
+                                            바른역사 인식 확산·공유 강화
+                                        </div>
+                                        <div class="lay_tit gray">
+                                            제도
+                                        </div>
+                                        <div class="lay_con dot">
+                                            <ul class="bull03">
+                                                <li>체험 중심의 실천적 독도교육 강화</li>
+                                                <li>동북아 역사교육 전문기관 역할확립</li>
+                                                <li>온라인 소통 확대를 통한 홍보 강화</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="ty02_item">
+                                        <div class="lay_tit brown_bg">
+                                            사회적 가치 실현을 위한 ESG 경영
+                                        </div>
+                                        <div class="lay_tit gray">
+                                            제도
+                                        </div>
+                                        <div class="lay_con dot">
+                                            <ul class="bull03">
+                                                <li>경영관리 효율화</li>
+                                                <li>지속가능한 조직역량 가속</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+
+                            <div class="comp_box">
+                                <div class="comp_tit">태그</div>
+                                <div class="comp_tit02">간행도서 9개</div>                               
+                                <div class="flag_box book">
+                                    <span class="tag_txt">연구총서</span>
+                                    <span class="tag_txt flag02">기획연구</span>
+                                    <span class="tag_txt flag03">번역총서</span>
+                                    <span class="tag_txt flag04">자료총서</span>
+                                    <span class="tag_txt flag05">교양총서</span>
+                                    <span class="tag_txt flag06">발굴보고서</span>
+                                    <span class="tag_txt flag07">교양서</span>
+                                    <span class="tag_txt flag08">일제침탈사</span>
+                                    <span class="tag_txt flag09">고구려통사</span>
+                                    <span class="tag_txt flag10">기타</span>
+                                </div>
+                                <!-- <div class="comp_tit02">공지 6개</div>                               
+                                <div class="flag_box notice">
+                                    <span class="tag_txt">일반공지</span>
+                                    <span class="tag_txt flag02">연구용역지원</span>
+                                    <span class="tag_txt flag03">시민단체지원</span>
+                                    <span class="tag_txt flag04">교육연수</span>
+                                    <span class="tag_txt flag05">채용공고</span>
+                                    <span class="tag_txt flag06">입찰공고</span>
+                                </div> -->
+                                <div class="comp_tit02">통합 4개</div>                               
+                                <div class="flag_box total">
+                                    <span class="tag_txt">역사현안동영상</span>
+                                    <span class="tag_txt flag02">동북아전문가대담</span>
+                                    <span class="tag_txt flag03">동북아전문가강연</span>
+                                    <span class="tag_txt flag04">역사Q&A</span>
+                                </div>                                
+                                <div class="comp_tit02">Grid</div>
+                                <div class="flag_box">
+                                    <span class="tag_txt">공지</span>
+                                </div>
+                            </div>
+
+                            
+                            <div class="comp_box">
+                                <div class="comp_tit">토글</div>
+                                <ul class="toggle_area">
+                                    <li>
+                                        <div class="toggle_caption">
+                                            <h3 class="title"><a href="javascript:;">h4, .sub_txt, 불릿 리스트(기본, 한글, 원형)</a></h3>
+                                            <div class="cont">
+                                                <div class="policy">
+                                                    <h4>제1조(목적)</h4><p class="con_subtxt">내용입니다. 내용입니다.&lt;개정 2018.03.12&gt;</p>
+                                                    <h4>제2조(정의)</h4><p class="con_subtxt">내용입니다. 내용입니다.</p> 
+                                                    <ol class="list_han sub_txt">
+                                                        <li>1.불릿 한글인 경우
+                                                            <ol class="list-han">
+                                                                <li>가. 동북아역사재단에 대하여 민원사무를 신청하는 중이거나 신청하려는 것이 명백한 개인 또는 단체</li>
+                                                                <li>나. 인·허가, 검사, 감사, 단속, 지도 등의 대상인 개인 또는 단체</li>
+                                                                <li>다. 결정, 감정, 시험, 사정, 조정 등으로 이익 또는 불이익을 직접적으로 받는 개인 또는 단체</li>
+                                                            </ol>
+                                                        </li>
+                                                        <li>2. 불릿 원형문자인 경우
+                                                            <ol class="list-cir">
+                                                                <li>① 임직원은 하급자에게 자기 또는 타인의 이익을 위하여 법령이나 규정에 위반하여 공정한 직무수행을 현저하게 해치는 지시를 하여서는 아니 된다.</li>
+                                                                <li>② 상급자로부터 제1항을 위반하는 지시를 받은 임직원은 별지 제1호 서식 또는 전자우편 등의 방법으로 그 사유를 그 상급자에게 소명하고 지시에 따르지 아니하거나, 별지 제2호 서식 또는 전자우편 등의 방법으로 제35조에 따라 지정된 행동강령 업무를 담당하는 임직원(이하 “행동강령책임관”이라 한다)과 상담할 수 있다.  &lt;개정 2018.03.12&gt;</li>
+                                                                <li>③ 제2항에 따라 지시를 이행하지 아니하였는데도 같은 지시가 반복될 때에는 별지 제2호 서식 또는 전자우편 등의 방법으로 즉시 행동강령책임관과 상담하여야 한다. &lt;개정 2018.03.12&gt;</li>
+                                                                <li>④ 제2항이나 제3항에 따라 상담 요청을 받은 행동강령책임관은 지시 내용을 확인하여 지시를 취소하거나 변경할 필요가 있다고 인정되면 이사장에게 보고하여야 한다.  다만, 지시 내용을 확인하는 과정에서 부당한 지시를 한 상급자가 스스로 그 지시를 취소하거나 변경하였을 때에는 이사장에게 보고하지 아니할 수 있다.</li>
+                                                                <li>⑤ 제4항에 따른 보고를 받은 이사장은 필요하다고 인정되면 지시를 취소·변경하는 등 적절한 조치를 하여야 한다.  이 경우 공정한 직무수행을 해치는 지시를 제2항에 따라 이행하지 아니하였는데도 같은 지시를 반복한 상급자에게는 징계 등 필요한 조치를 할 수 있다.</li>
+                                                            </ol>
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="toggle_caption">
+                                            <h3 class="title"><a href="javascript:;">thead 복합형</a></h3>
+                                            <div class="cont">
+                                                <div class="policy">
+                                                    <!-- 목록(스크롤형) -->
+                                                    <div class="board_wrap">
+                                                        <div class="scroll_txt">좌우스크롤로 이동 할 수 있습니다.</div>
+                                                        <div class="board_basic scroll">
+                                                            <table>
+                                                                <caption>
+                                                                    금품 등 수수(授受) 금지 위반 징계양정기준: 
+                                                                    비위수수유형행위(직무와 직접적인 관계 없이 금품등을 직무관련자 또는 직무관련공무원으로부터 받거나 직무관련공무원에게 제공한 경우: 능동/수동,
+                                                                    직무와 직접 관련하여 금품등을 수수하였으나, 위법·부당한 처분을 하지 아니한 경우: 능동/수동,
+                                                                    직무와 직접 관련하여 금품등을 수수하고, 위법·부당한 처분을 한 경우: 능동/수동),
+                                                                    금액(100만원 미만, 100만원 이상 300만원 미만, 100만원 이상 300만원 미만, 500만원 이상) 로 구성
+                                                                </caption>
+                                                                <colgroup>
+                                                                    <col style="width: 200px;">
+                                                                    <col style="width: 50px;">
+                                                                    <col>
+                                                                    <col>
+                                                                    <col>
+                                                                    <col>
+                                                                </colgroup>
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col" colspan="2" class="col_right line01">금액</th>
+                                                                        <th scope="col" rowspan="2">100만원 미만</th>
+                                                                        <th scope="col" rowspan="2">100만원 이상<br>300만원 미만</th>
+                                                                        <th scope="col" rowspan="2">100만원 이상<br>300만원 미만</th>
+                                                                        <th scope="col" rowspan="2">500만원 이상</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="col" colspan="2" class="col_left">비위수수유형행위</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row" rowspan="2">
+                                                                            직무와 직접적인 관계 없이<br> 금품등을 직무관련자 또는<br> 직무관련공무원으로부터<br> 받거나 직무관련공무원에게<br> 제공한 경우
+                                                                        </th>
+                                                                        <th scope="row" class="dep_02">수동</th>
+                                                                        <td>감봉․정직․강등</td>
+                                                                        <td>강등․해임․파면</td>
+                                                                        <td>해임․파면</td>
+                                                                        <td>파면</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row" class="dep_02">능동</th>
+                                                                        <td>정직·강등·해임</td>
+                                                                        <td>해임․파면</td>
+                                                                        <td colspan="2">파면</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row" rowspan="2">
+                                                                            직무와 직접 관련하여<br> 금품등을 수수하였으나,<br> 위법·부당한 처분을<br> 하지 아니한 경우
+                                                                        </th>
+                                                                        <th scope="row" class="dep_02">수동</th>
+                                                                        <td>정직·강등·해임</td>
+                                                                        <td>해임․파면</td>
+                                                                        <td colspan="2">파면</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row" class="dep_02">능동</th>
+                                                                        <td>강등·해임·파면</td>
+                                                                        <td colspan="3">파면</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row" rowspan="2">
+                                                                            직무와 직접 관련하여<br> 금품등을 수수하고,<br> 위법·부당한 처분을<br> 한 경우
+                                                                        </th>
+                                                                        <th scope="row" class="dep_02">수동</th>
+                                                                        <td>강등·해임·파면</td>
+                                                                        <td colspan="3">파면</td> 
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row" class="dep_02">능동</th>
+                                                                        <td>해임․파면</td>
+                                                                        <td colspan="3">파면</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <!-- //목록(스크롤형) -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="comp_box">
+                                <div class="comp_tit">탭</div>
+                                <div class="comp_tit02">탭 구조형식 링크 이동(탭 이동 X) : 나의 민원 확인 '본인 인증' 사용X -> iframe으로 수정</div>       
+                                <div class="tab_area">
+                                    <ul class="tab">
+                                        <li><a href="https://www.epeople.go.kr/nep/crtf/userLogn.npaid?returnUrl=%2Fnep%2Fpttn%2FgnrlPttn%2FPttnRqstWrtnInfo.paid" target="_blank" title="새창 이동">민원신청</a></li>
+                                        <li class="on"><a href="javascript:;">나의 민원 확인</a></li>
+                                    </ul>
+                                    <div class="tab_con">
+                                        <h3 class="bull01">본인 인증(비회원 로그인)</h3>
+                                        <div class="nonmem_login">
+                                            <div>
+                                                <a href="javascript:;">
+                                                    <span>간편인증 로그인</span>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="javascript:;">
+                                                    <span>아이핀</span>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="javascript:;">
+                                                    <span>금융인증서</span>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="javascript:;">
+                                                    <span>간편인증 로그인</span>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="javascript:;">
+                                                    <span class="mob_lts">공동인증서(구 공인인증서)</span>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="javascript:;">
+                                                    <span>금융인증서</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="comp_tit02">기본 탭</div>                               
+                                <div class="tab_area basic_tab">
+                                    <ul class="tab">
+                                        <li class="on" rel="menu1">
+                                            <a href="javascript:;">tab1</a>
+                                            <div id="menu1" class="tab_box on">
+                                                <a href="javascript:;">tab1</a>
+                                            </div>
+                                        </li>
+                                        <li rel="menu2">
+                                            <a href="javascript:;">tab2</a>
+                                            <div id="menu2" class="tab_box">
+                                                <p>tab2</p>
+                                            </div>
+                                        </li>
+                                        <li rel="menu3">
+                                            <a href="javascript:;">tab3</a>
+                                            <div id="menu3" class="tab_box">
+                                                <p>tab3</p>
+                                            </div>
+                                        </li>
+                                        <li rel="menu4">
+                                            <a href="javascript:;">tab4</a>
+                                            <div id="menu4" class="tab_box">
+                                                <p>tab4</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
+                                </div> 
+                                <!-- <div class="comp_tit02">기본 탭</div>                                -->
+                                <!-- <div class="tab_area basic_tab">
+                                    <ul class="tab">
+                                        <li class="on" rel="menu5">
+                                            <a href="javascript:;">tab1</a>
+                                            <div id="menu5" class="tab_box on">
+                                                <a href="javascript:;">tab5</a>
+                                            </div>
+                                        </li>
+                                        <li rel="menu6">
+                                            <a href="javascript:;">tab2</a>
+                                            <div id="menu6" class="tab_box">
+                                                <p>tab6</p>
+                                            </div>
+                                        </li>
+                                        <li rel="menu7">
+                                            <a href="javascript:;">tab3</a>
+                                            <div id="menu7" class="tab_box">
+                                                <p>tab7</p>
+                                            </div>
+                                        </li>
+                                        <li rel="menu8">
+                                            <a href="javascript:;">tab4</a>
+                                            <div id="menu8" class="tab_box">
+                                                <p>tab8</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>  -->
+                                
+                                
+                                                    
+                            </div>
+
+                        </div>
+                        <!-- //con_area -->
+                    </div>
+                    <!-- //con_wrap -->
+                </div>
+            </div>
+            <!-- //body_area -->
+
+            <!-- footer_area -->
+            <div class="footer_area">
+                <div class="foo_link">
+                    <div class="inner">
+                        <ul class="foo_list">
+                            <li><a href="javascript:;">홈페이지 이용안내</a></li>
+                            <li><a href="javascript:;">이용약관</a></li>
+                            <li class="fc_03 privacy"><a href="javascript:;">개인정보처리방침</a></li>
+                            <li><a href="javascript:;">이메일무단수집거부</a></li>
+                            <li><a href="javascript:;">사이트맵</a></li>
+                        </ul>
+                        <div class="foo_family">
+                            <!-- 배너영역 -->
+                            <div class="banner_area">
+                                <div class="swiper_indicator">
+                                    <button type="button" class="swiper-button-prev"><span class="blind">prev</span></button>
+                                    <div class="ind_middle">
+                                        <button type="button" class="swiper-button-play"><span class="blind">play</span></button>
+                                        <button type="button" class="swiper-button-pause is_open"><span class="blind">stop</span></button>
+                                    </div>
+                                    <button type="button" class="swiper-button-next"><span class="blind">next</span></button>
+                                </div>
+                                <div class="swiper bannerSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="javascript:;" target="_blank" title="새창열림">
+                                                <img src="../../assets/images/common/img_banner_01.png" alt="외교부">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="javascript:;" target="_blank" title="새창열림">
+                                                <img src="../../assets/images/common/img_banner_02.png" alt="교육부">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="javascript:;" target="_blank" title="새창열림">
+                                                <img src="../../assets/images/common/img_banner_01.png" alt="외교부">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="javascript:;" target="_blank" title="새창열림">
+                                                <img src="../../assets/images/common/img_banner_02.png" alt="교육부">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //배너영역 -->
+                            <!-- 관련기관 -->
+                            <div class="select_wrap sel_top agency">
+                                <a href="javascript:;" class="btn_sel">관련기관</a>
+                                <ul class="sel_option">
+                                    <li><a href="http://www.president.go.kr" target="_blank" title="새창열림">청와대</a></li>
+                                    <li><a href="http://job.alio.go.kr" target="_blank" title="새창열림">JOB-ALIO</a></li>
+                                    <li><a href="http://www.moe.go.kr/main.do" target="_blank" title="새창열림">교육부</a></li>
+                                    <li><a href="http://www.mofat.go.kr/" target="_blank" title="새창열림">외교부</a></li>
+                                    <li><a href="http://www.molit.go.kr/portal.do" target="_blank" title="새창열림">국토교통부</a></li>
+                                    <li><a href="http://www.mcst.go.kr/main.jsp" target="_blank" title="새창열림">문화체육관광부</a></li>
+                                    <li><a href="http://www.moj.go.kr/" target="_blank" title="새창열림">법무부</a></li>
+                                    <li><a href="http://www.unikorea.go.kr/main.do" target="_blank" title="새창열림">통일부</a></li>
+                                    <li><a href="http://www.mnd.go.kr/mbshome/mbs/mnd/" target="_blank" title="새창열림">국방부</a></li>
+                                    <li><a href="http://www.dokdomuseum.go.kr/" target="_blank" title="새창열림">독도박물관</a></li>
+                                    <li><a href="http://www.krihs.re.kr/" target="_blank" title="새창열림">국토연구원</a></li>
+                                </ul>
+                            </div>
+                            <!-- 관련기관 -->
+                            <!-- 패밀리사이트 -->
+                            <div class="select_wrap sel_top family">
+                                <a href="javascript:;" class="btn_sel">패밀리사이트</a>
+                                <ul class="sel_option">
+                                    <li><a href="http://www.dokdohistory.com" target="_blank" title="새창열림"><span>독도연구소</span></a></li>
+                                    <li><a href="http://dokdomuseumseoul.com" target="_blank" title="새창열림"><span>독도체험관</span></a></li>
+                                    <li><a href="http://www.hflib.kr/" target="_blank" title="새창열림"><span>동북아 역사자료실</span></a></li>
+                                    <li><a href="http://contents.nahf.or.kr/" target="_blank" title="새창열림"><span>동북아 역사넷</span></a></li>
+                                    <li><a href="/training/main.do" target="_blank" title="새창열림"><span>동북아,독도 교육 연수원</span></a></li>
+                                </ul>
+                            </div>
+                            <!-- //패밀리사이트 -->
+                        </div>
+                    </div>
+                </div>                        
+                <div class="foo_copy">
+                    <div class="inner">
+                        <ul class="link_list">
+                            <li><a href="javascript:;">동북아역사넷</a></li>
+                            <li><a href="javascript:;">동북아역사자료센터</a></li>
+                            <li><a href="javascript:;">독도연구소</a></li>
+                            <li><a href="javascript:;">독도아카이브</a></li>
+                            <li><a href="javascript:;">독도체험관</a></li>
+                            <li><a href="javascript:;">동북아∙독도 교육 연수원</a></li>
+                        </ul>
+                        <!-- 모바일용 푸터 -->
+                        <ul class="foo_list m_visible">
+                            <li><a href="javascript:;">홈페이지 이용안내</a></li>
+                            <li><a href="javascript:;">이용약관</a></li>
+                            <li class="fc_03 privacy"><a href="javascript:;">개인정보처리방침</a></li>
+                            <li><a href="javascript:;">이메일무단수집거부</a></li>
+                            <li><a href="javascript:;">사이트맵</a></li>
+                        </ul>
+                        <!-- //모바일용 푸터 -->
+                        <div class="foo_info">
+                            <div class="foo_address">
+                                <div class="txt_address"><span class="foo_tit">주소</span><span class="foo_txt">03739 서울시 서대문구 통일로 81 (미근동267) NH농협생명빌딩</span></div>
+                                <div class="txt_tel"><span class="foo_tit">전화번호</span><span class="foo_txt">02-2012-6000</span></div>
+                                <div class="txt_fax"><span class="foo_tit">팩스</span><span class="foo_txt">02-2012-6175</span></div>
+                            </div>
+                            <div class="foo_copyright">
+                                COPYRIGHT © 2022 동북아역사재단. ALL RIGHTS RESERVED.
+                            </div>
+                        </div>
+                        <div class="foo_logo">    
+                            <ul class="sns_box">
+                                <li><a href="javascript:;" class="sns_face" title="새창열림"><span class="blind">Facebook</span></a></li>
+                                <li><a href="javascript:;" class="sns_insta" title="새창열림"><span class="blind">Instagram</span></a></li>
+                                <li><a href="javascript:;" class="sns_you" title="새창열림"><span class="blind">YouTube</span></a></li>
+                                <li><a href="javascript:;" class="sns_blog" title="새창열림"><span class="blind">Blog</span></a></li>
+                            </ul>
+                            <a href="http://webwatch.or.kr" target="_blank" title="새창열림" class="logo_wa">
+                                <img src="../../assets/images/common/logo_wa.png" alt="과학기술정보통신부 WA(WEB접근성) 품질인증 마크, 웹와치(WebWatch)">
+                            </a>
+                            <a href="http://www.kogl.or.kr/" target="_blank" title="새창열림" class="logo_kogl">
+                                <img src="../../assets/images/common/logo_kogl.png" alt="공공누리 마크">
+                            </a>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+            <!-- //footer_area -->
+
+            <!-- 상단으로 -->
+            <div class="gotop_area">
+                <div class="inner">
+                    <button type="button" class="btn_gotop"><span class="blind">go top</span></button>
+                </div>
+            </div>
+            <!-- //상단으로 -->          
+        </div>
+
+    </div>
+
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/js/jquery.fullPage.js"></script>
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-634df524e4d16acb"></script>
+    <script src="../../assets/js/swiper.min.js"></script>
+    <script src="../../assets/js/common.js"></script>
+</body>
+</html>

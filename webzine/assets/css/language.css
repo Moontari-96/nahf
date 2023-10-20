@@ -1,0 +1,79 @@
+/* 영문-pc ====================== */
+/* link_area */
+.lang_eng .link_area .link_list02 > li:nth-child(3) .m_hidden{display: none;}
+
+/* 메인 ---------------------------------------- */
+.language .gnb_area .dep_con .dep_03_wrap{padding: 60px 20px 50px 45px;}
+
+/* 뉴스레터 상세 ---------------------*/
+.language .share_box .list_menu .news_list_box ul li a span {letter-spacing: -0.6px;}
+
+/* 뉴스레터 검색결과 ---------------------*/
+.language .board_total.news_serch_main .search_input button {min-width: 100px;}
+
+/* 뉴스레터 구독신청&공공저작물이용정책 ---------------------*/
+.language .tab_area.basic_tab .tab > li .tab_box {margin-top: 75px;}
+.language .tab_area.basic_tab .tab > li > a{min-height: 75px;}
+
+@media all and (max-width: 1560px){
+    /* link_area */
+    .lang_eng .link_area .link_list02 > li:nth-child(3) .m_hidden{display: inline-block;}
+}
+@media all and (max-width : 1500px){
+    /* 영문-반응형 ====================== */
+    /* link_area */
+    .lang_eng .link_area .link_list > li{padding: 0 5px}
+    .lang_eng .link_area .link_list02 > li{padding: 0 5px;}
+    .lang_eng .link_area .link_list02 > li.lang_box{padding-left: 0;}
+    .lang_eng .link_area [class*='link_list'] > li > a{line-height: 1.1;font-size: 11px;}
+    .lang_eng .lang_box{width: 80px;}
+    .lang_eng .lang_box:after{left: 3px;}
+    .lang_eng .select_wrap > a.btn_sel:after{width: 25px}
+    .lang_eng .link_area .zoom_box{font-size: 11px;}
+    .lang_eng .select_wrap.sel_ty01 > .btn_sel{font-size: 11px;}
+    .lang_eng .select_wrap.sel_ty01 .sel_option > li > a{font-size: 11px;}
+}
+@media all and (max-width: 1285px){
+    /* 뉴스레터 메인 ---------------------*/
+    .language .visual_area .inner .main_tit p {top: -18px;}
+}
+@media all and (max-width: 1199px){
+    /* link_area */
+    .lang_eng .link_area [class*='link_list'] > li > a{font-size: 17px; line-height: 25px;}
+}
+@media all and (max-width: 800px){
+    /* 메인 ---------------------*/
+    /* sec03 */
+    .language .public_area .public-swiper .swiper-wrapper{column-gap: 30px;}
+}
+@media all and (max-width : 750px) {    
+    /* 뉴스레터 메인 ---------------------*/
+    .language .gnb_area .logo_box a + a{font-size: 14px;margin-left: 2px;padding-left: 5px !important;}
+    .language .con_area .ctg_box .more {padding: 20px 35px 20px 0;}
+    
+    /* 뉴스레터 검색결과 ---------------------*/
+    .language .board_total.news_serch_main .search_input button {min-width: 40px;}
+    .language .con_wrap.con_news .board_list.news_list table tbody tr td:first-child + td {padding: 4px 0px 0px 0px;margin-left: 0px;line-height: 20px;display: block;max-width: 100%;text-align: left; white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+    .language .con_wrap.con_news .board_list.news_list table tbody tr td:first-child + td::after {display: none;}
+    .language .con_news_search .board_list table tbody tr td{float: unset;}
+    
+    /* 뉴스레터 구독신청&공공저작물이용정책 ---------------------*/
+    .language .tab_area.basic_tab .tab > li > a{min-height: 50px;}
+    .language .request_dis .req_layout .nahf_logo_box {width: 100%;;}
+    .request_dis .req_layout .img_thum02 {height: 263px;}
+    .language .request_dis .req_layout .rea_txt_box {width: 100%;padding-left: 0;}    
+}
+@media all and (max-width : 500px) {
+    /* 뉴스레터 메인 ---------------------*/
+    .language .visual_area .inner .main_tit p {top: 80px;}
+
+}
+@media all and (max-width : 440px) {
+    /* 뉴스레터 검색결과 ---------------------*/
+    .language .con_wrap.con_news .board_list table tbody tr .list_category {text-align: left; width: 100%; margin: 0; padding-top: 4px;}
+}
+@media all and (max-width: 375px){
+    /* 뉴스레터 구독신청&공공저작물이용정책 ---------------------*/
+    .language .tab_area.basic_tab[class*="col"] .tab > li:nth-child(2).on > a {padding: 1px 0;}
+    .language .tab_area.basic_tab[class*="col"] .tab > li:nth-child(2) > a {padding: 1px 0;}
+}

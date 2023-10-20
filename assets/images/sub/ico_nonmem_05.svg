@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" viewBox="0 0 86 86">
+    <defs>
+        <clipPath id="b36hw3ai2a">
+            <path data-name="사각형 153875" transform="translate(798.5 1838.5)" style="fill:none" d="M0 0h86v86H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 133202">
+        <g data-name="그룹 133201" style="clip-path:url(#b36hw3ai2a)" transform="translate(-798.5 -1838.5)">
+            <g data-name="그룹 133200">
+                <rect data-name="사각형 153874" width="44.068" height="75.498" rx="9.991" transform="translate(809.932 1844.776)" style="stroke-miterlimit:10;stroke:#58595a;stroke-width:2.5px;fill:none"/>
+                <path data-name="선 5601" transform="translate(809.932 1907.733)" style="stroke-miterlimit:10;stroke:#58595a;stroke-width:2.5px;fill:none" d="M0 0h44.068"/>
+                <path data-name="선 5602" transform="translate(827.227 1850.163)" style="stroke-miterlimit:10;stroke:#58595a;stroke-width:2.5px;fill:none" d="M0 0h9.478"/>
+                <circle data-name="타원 38106" cx="2.721" cy="2.721" r="2.721" transform="translate(829.245 1910.755)" style="stroke-miterlimit:10;stroke:#58595a;stroke-width:2.5px;fill:none"/>
+            </g>
+            <path data-name="패스 241361" d="m853.433 1873.251 2.667-1.037a3.853 3.853 0 0 1 3.185.3l2.667-1.037a3.005 3.005 0 0 1 3.7 1.63l2.667-1.037a3 3 0 0 1 3.7 1.631l5.184 13.334c1.049 2.7-.774 5.908-.075 7.7" style="fill:#fff;stroke:#a36a1a;stroke-width:2px;stroke-miterlimit:10"/>
+            <path data-name="선 5603" transform="translate(859.139 1872.357)" style="fill:#fff;stroke:#a36a1a;stroke-width:2px;stroke-miterlimit:10" d="m0 0 2.717 6.617"/>
+            <path data-name="선 5604" transform="translate(865.519 1872.83)" style="fill:#fff;stroke:#a36a1a;stroke-width:2px;stroke-miterlimit:10" d="m0 0 2.174 5.294"/>
+            <path data-name="패스 241362" d="m856.543 1881.251-6.22-16a2.862 2.862 0 0 0-3.7-1.63 2.823 2.823 0 0 0-1.648 3.661l7.92 20.37a.427.427 0 0 1-.6.531 35.953 35.953 0 0 0-6.419-2.784 3.772 3.772 0 0 0-3.539 1.116 2.759 2.759 0 0 0 .854 4.332c4.931 2.482 8.143 7.132 12.905 9 1.948.858 2.079 1.4 2.37 2.149" style="fill:#fff;stroke:#a36a1a;stroke-width:2px;stroke-miterlimit:10"/>
+        </g>
+    </g>
+</svg>
